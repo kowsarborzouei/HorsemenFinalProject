@@ -10,6 +10,9 @@ body {
     font-family: 'Comfortaa', cursive;
 
 }
+.a_style{
+    margin-right: 20px;
+}
 
 .main-page {
     display: grid;

@@ -21,6 +21,7 @@ nav{
     height: 50px;
     padding-left: 32px;
     width: 98%;
+    z-index: 3;
 }
 nav img {
     width: 150px;

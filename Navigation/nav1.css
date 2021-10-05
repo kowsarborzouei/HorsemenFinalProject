@@ -1,0 +1,113 @@
+:root {
+    --first-color: #c9916b;
+    --second-color:#ffffff;
+    --third--color:#d6dad8;
+    --background-color:#39574a;
+}
+
+
+
+body{
+    font-family: Arial;
+}
+header{
+    /*padding: 15px 20px;*/
+    /*background-color: var(--background-color);*/
+    background: transparent;
+}
+
+.headerFixer--sticky {
+    position: fixed;
+    background-color: var(--background-color);
+    animation: slideInDown;
+    animation-duration: 0.7s;
+
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 32px;
+    width: 98%;
+
+
+
+}
+nav img{
+    width: 150px;
+
+}
+
+.main-nav {
+    display: none;
+    list-style-type: none;
+}
+
+.hamburger-menu{
+    width: 30px;
+    height: 30px;
+}
+.hamburger-menu span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: var(--first-color);
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+#hamburger-links{
+    display: none;
+}
+
+.main-nav a , #hamburger-links a {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    /*padding-left: 40px;*/
+    color: white;
+    font-weight: 520;
+    transition: all .1s ease-in;
+    justify-self: center;
+}
+
+#caseStudiesLink , #detailsLink{
+    color: var(--first-color);
+}
+
+
+#hamburger-links{
+    background-color:var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding: 3vw 2vh;
+    line-height:8vh;
+}
+
+
+.main-nav a:hover , #hamburger-links a:hover{
+    /*background-color: gray;*/
+    color: var(--first-color);
+}
+
+@media (min-width: 767px) {
+    .hamburger-menu{
+        display: none;
+    }
+    .main-nav{
+        display: flex;
+    }
+    #hamburger-links {
+        display: none;
+    }
+
+
+
+}
+
+

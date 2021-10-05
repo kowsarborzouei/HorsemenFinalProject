@@ -1,0 +1,132 @@
+:root {
+    --first-color: #c9916b;
+    --second-color:#ffffff;
+    --third--color:#d6dad8;
+    --background-color:#2d453b;
+}
+
+body{
+    font-family: Arial;
+}
+h1{
+    color: white;
+    font-size: 1.5rem;
+}
+
+header{
+    padding: 15px 20px;
+    background-color: var(--background-color);
+    /*background: transparent;*/
+}
+
+.headerFixer--sticky {
+    position: fixed;
+    background-color: var(--background-color);
+    animation: slideInDown;
+    animation-duration: 0.7s;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 32px;
+    width: 98%;
+}
+nav img {
+    width: 150px;
+}
+
+ul {
+    margin: 0;
+}
+
+.main--nav , #hamburger--links {
+     display: none;
+     list-style-type: none;
+ }
+.hamburger--menu{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.hamburger--menu span{
+    display: block;
+    width: 30px;
+    height: 5px;
+    background-color: var(--first-color);
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+#hamburger--links{
+    background-color:var(--background-color);
+    padding: 3vw 2vh;
+    display: block;
+    opacity: 0;
+    transition: all .2s;
+    /*line-height: 8vh;*/
+
+    /*height: 20%;*/
+}
+#hamburger--links li {
+    transition: all 0.2s;
+}
+
+
+.main--nav a , #hamburger--links a {
+    text-decoration: none;
+    padding: 5px 10px;
+    /*padding-left: 40px;*/
+    color: white;
+    font-weight: 700;
+    /*transition: all .1s ease-in;*/
+    justify-self: center;
+}
+
+
+
+
+.main--nav a:hover , #hamburger--links a:hover{
+    /*background-color: gray;*/
+    color: var(--first-color);
+}
+
+
+@media (min-width: 809px ) {
+    .hamburger--holder{
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+    #hamburger--links{
+        padding-right: 100px;
+    }
+    /*#hamburger--links li {*/
+    /*    display: none;*/
+    /*    padding: 0;*/
+    /*}*/
+
+
+}
+@media (min-width: 1230px) {
+    .hamburger--menu{
+        display: none;
+    }
+    .main--nav{
+        display: flex;
+    }
+    #hamburger--links {
+        padding: 0;
+        opacity: 0;
+        height: 0;
+    }
+    #hamburger--links li {
+        display: none;
+    }
+
+
+
+}
+
+

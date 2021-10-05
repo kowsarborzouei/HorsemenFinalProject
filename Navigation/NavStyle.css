@@ -2,21 +2,11 @@
     --first-color: #c9916b;
     --second-color:#ffffff;
     --third--color:#d6dad8;
-    --background-color:#2d453b;
+    --background-color:#39574a;
 }
 
 body{
     font-family: Arial;
-}
-/*h1{*/
-/*    color: white;*/
-/*    font-size: 1.5rem;*/
-/*}*/
-
-header{
-    padding: 15px 20px;
-    background-color: var(--background-color);
-    /*background: transparent;*/
 }
 
 .headerFixer--sticky {
@@ -25,16 +15,20 @@ header{
     animation: slideInDown;
     animation-duration: 0.7s;
 }
+.hamburgerFixer--sticky{
+    margin-top: 50px;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    /*padding-left: 32px;*/
-    /*width: 98%;*/
+    padding-left: 32px;
+    width: 98%;
 }
 nav img {
-    width: 220px;
+    width: 150px;
+    margin-top: 5px;
 }
 
 ul {
@@ -44,19 +38,25 @@ ul {
 .main--nav , #hamburger--links {
      display: none;
      list-style-type: none;
-    padding: 0;
+    margin-right: 15px;
  }
-.hamburger--menu{
-    width: 30px;
-    height: 30px;
-    /*margin-right: 20px;*/
+
+.main--nav a , #hamburger--links a {
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 15px;
+    color: white;
+    font-weight: 520;
+    transition: all .1s ease-in;
+    justify-self: center;
 }
+
 .hamburger--menu span{
     display: block;
     width: 30px;
     height: 5px;
     background-color: var(--first-color);
-    margin: 5px 0;
+    margin: 5px 30px;
     border-radius: 10px;
 }
 
@@ -66,27 +66,17 @@ ul {
     display: block;
     opacity: 0;
     transition: all .2s;
-    /*line-height: 8vh;*/
-
-    /*height: 20%;*/
 }
 #hamburger--links li {
     transition: all 0.2s;
 }
 
 
-.main--nav a , #hamburger--links a {
-    text-decoration: none;
-    padding: 5px 10px;
-    /*padding-left: 40px;*/
-    color: white;
-    font-weight: 700;
-    /*transition: all .1s ease-in;*/
-    justify-self: center;
+
+
+#caseStudiesLink , #detailsLink{
+    color: var(--first-color);
 }
-
-
-
 
 .main--nav a:hover , #hamburger--links a:hover{
     /*background-color: gray;*/

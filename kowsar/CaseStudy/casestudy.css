@@ -10,9 +10,7 @@ body {
     font-family: 'Comfortaa', cursive;
 
 }
-.a_style{
-    margin-right: 20px;
-}
+
 
 .main-page {
     display: grid;
@@ -116,7 +114,7 @@ body {
 
 }
 
-a {
+.a_image {
     margin: 0;
     padding: 0;
     display: contents;

@@ -5,10 +5,6 @@
     --background-color:#39574a;
 }
 
-body{
-    font-family: Arial;
-}
-
 .headerFixer--sticky {
     position: fixed;
     background-color: var(--background-color);
@@ -117,6 +113,7 @@ ul {
     #hamburger--links li {
         display: none;
     }
+
 
 
 

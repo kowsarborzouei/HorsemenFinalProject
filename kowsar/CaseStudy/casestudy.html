@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../../Normalize.css">
     <link rel="stylesheet" href="../../Navigation/NavStyle.css">
     <link href="http://fonts.cdnfonts.com/css/comfortaa-3" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
@@ -14,16 +15,16 @@
 <body>
 <div class="main-page">
     <div class="header">
-        <nav>
-            <h1 onclick="closeMenu()"><img src="/Navigation/Image/Small-logo.png"></h1>
+        <nav id="nav">
+            <img src="/Navigation/Image/Small-logo.png">
             <ul class="main--nav">
-                <li><a href="#">Home</a></li>
+                <li style="margin-right: 20px"><a href="#">Home</a></li>
                 <li><a href="#" id="caseStudiesLink">Case studies</a></li>
                 <li><a href="#" id="detailsLink">Details</a></li>
                 <li><a href="#">Offer</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#" style="text-decoration: underline">Buy Now</a></li>
+                <li><a href="#" >Buy Now</a></li>
             </ul>
 
             <div class="hamburger--menu" >
@@ -227,17 +228,26 @@
             k.style.marginBottom = "0"
         }
     }
-
+</script>
+<script>
     window.onscroll = function() {headerFixer()};
 
-    var header = document.getElementById("nav");
-    var sticky = header.offsetTop;
+    let header = document.getElementById("nav");
+    let hamburger = document.getElementById("hamburger--links");
+
+    let sticky = header.offsetTop;
+
 
     function headerFixer() {
-        if (window.pageYOffset > sticky) {
+        if (window.pageYOffset > sticky ) {
             header.classList.add("headerFixer--sticky");
+            hamburger.classList.add("headerFixer--sticky");
+            hamburger.classList.add("hamburgerFixer--sticky");
+
         } else {
             header.classList.remove("headerFixer--sticky");
+            hamburger.classList.remove("headerFixer--sticky");
+            hamburger.classList.remove("hamburgerFixer--sticky");
         }
     }
 

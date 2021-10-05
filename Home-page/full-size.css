@@ -216,7 +216,7 @@
     /*my codes---------------------------------------*/
     .belowSlider-grid{
         display: grid;
-        grid-template: 4rem 47rem / 50vw 50vw;
+        grid-template: 4rem 40rem / 50vw 50vw;
         grid-template-areas: "seeMore-bar seeMore-bar"
                              "people-img below-text";
         overflow: hidden;
@@ -255,7 +255,7 @@
         /*!* height: 35rem; *!*/
         /*width: 50vw;*/
         background: url("images&icons/peopleatTable.jpg");
-        background-size: 50vw 47rem , cover;
+        background-size: 50vw 40rem , cover;
         background-repeat: no-repeat;
     }
     .belowSlider img {
@@ -264,7 +264,7 @@
         /*height: 47rem;*/
     }
     .belowSlider__text{
-        height: 40.25rem;
+        /*height: 40.25rem;*/
         /* height: 100%; */
         /*padding: 13vh 8vw 0 8vw;*/
         background-color: var(--background-color);

@@ -8,19 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
-<body >
-<header >
+<body>
+<header>
     <nav>
-        <h1 onclick="closeMenu()"><img src="../HomePage/Image/Small-logo.png"></h1>
+        <h1 onclick="closeMenu()"><img src="/Navigation/Image/Small-logo.png"></h1>
         <ul class="main--nav">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Case studies</a></li>
-            <li><a href="#">Details</a></li>
+            <li><a href="#" id="caseStudiesLink">Case studies</a></li>
+            <li><a href="#" id="detailsLink">Details</a></li>
             <li><a href="#">Offer</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="#" style="text-decoration: underline">Buy Now</a></li>
         </ul>
-        ...
+
         <div class="hamburger--menu" >
             <a href="javascript:void(0);"  onclick="hamburgerFunction()">
                 <span></span>
@@ -72,6 +73,20 @@
             k.style.marginBottom = "0"
         }
     }
+
+        window.onscroll = function() {headerFixer()};
+
+        var header = document.getElementById("nav");
+        var sticky = header.offsetTop;
+
+        function headerFixer() {
+        if (window.pageYOffset > sticky) {
+        header.classList.add("headerFixer--sticky");
+    } else {
+        header.classList.remove("headerFixer--sticky");
+    }
+    }
+
 </script>
 </body>
 </html>

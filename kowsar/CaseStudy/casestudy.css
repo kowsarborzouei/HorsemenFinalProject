@@ -33,7 +33,7 @@ body {
     height: 100%;
 }
 
-h1 {
+.header--content {
     color: var(--Header-content);
     text-align: center;
     margin: 30vh 4vw 0 4vw;

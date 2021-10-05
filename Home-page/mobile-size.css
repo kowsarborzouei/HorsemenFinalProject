@@ -25,7 +25,7 @@ h4 {
     height: 45vh;
     display: flex;
     flex-direction: row;
-    background-image: url(Image/backgroundshape.png), url(Image/background.png);
+    background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png);
     background-position: top;
     background-size: 30vw 30vh, cover;
     background-repeat: no-repeat;

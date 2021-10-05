@@ -25,7 +25,7 @@
         height: 70vh;
         display: flex;
         flex-direction: row;
-        background-image: url(Image/backgroundshape.png), url(Image/background.png);
+        background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png);
         background-position: top;
         background-size: 35vw 60vh, cover;
         background-repeat: no-repeat;
@@ -254,7 +254,7 @@
         /*!*height: 50rem;*!*/
         /*!* height: 35rem; *!*/
         /*width: 50vw;*/
-        background: url("Image/peopleatTable.jpg");
+        background: url("images&icons/peopleatTable.jpg");
         background-size: 50vw 47rem , cover;
         background-repeat: no-repeat;
     }

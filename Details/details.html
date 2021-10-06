@@ -184,11 +184,20 @@
     <!--******************footer*****************-->
     <a  class="fixed-button" href="#">
         <div>
-            <div class="fixed-button-container"><i class="fas fa-angle-left fa-2x fixed-icon"></i></div>
+            <div onmouseover="leftButtonShow()" onmouseleave="leftButtonFade()" class="fixed-button-container"><i id="leftButton-icon" class="fas fa-angle-left fa-2x fixed-icon"></i></div>
         </div>
     </a>
 
 </div>
+<script>
+    let x = document.getElementById("leftButton-icon");
+    const leftButtonShow =() => {
+        x.style.color = "gray";
+    }
+    const leftButtonFade = () => {
+      x.style.color="transparent"
+    }
+</script>
 
 </body>
 </html>

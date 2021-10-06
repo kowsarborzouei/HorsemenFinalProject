@@ -497,7 +497,7 @@ g:hover {
     background-size: 80px 80px;
 }
 .fixed-icon{
-    color: grey;
+    color: transparent;
 }
 .fixed-button:hover{
     background: white;

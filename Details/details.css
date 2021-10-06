@@ -480,6 +480,34 @@ g:hover {
     color: var(--first-color);
 }
 
+/*arash's codes-------------------------------------- */
+.fixed-button-container{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 25px
+}
+.fixed-button{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 5vh;
+    left: 0;
+    background: url("../Image/SquareBox.jpg");
+    background-size: 80px 80px;
+}
+.fixed-icon{
+    color: grey;
+}
+.fixed-button:hover{
+    background: white;
+}
+.fixed-button-container:hover{
+    display: block;
+}
+
+/*arash's codes-------------------------------------- */
+
 
 
 

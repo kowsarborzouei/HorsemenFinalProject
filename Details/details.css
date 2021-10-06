@@ -221,7 +221,6 @@ p {
     margin-left: -5px;
     padding: 1rem;
     color:  var(--wrapper-background);
-
 }
 .icon:hover{
     background-color: var(--wrapper-background);

@@ -9,13 +9,12 @@
     position: fixed;
     background-color: var(--background-color);
     animation: slideInDown;
-    animation-duration: 0.7s;
+    animation-duration: 0.3s ;
 }
 .hamburgerFixer--sticky{
     margin-top: 50px;
     position: fixed;
     background-color: var(--background-color);
-    /*width: 100%;*/
 }
 nav{
     display: flex;
@@ -35,32 +34,34 @@ ul {
     margin: 0;
 }
 
-
 .main--nav , #hamburger--links {
      display: none;
      list-style-type: none;
-
  }
 
 .main--nav a , #hamburger--links a {
     text-decoration: none;
     padding: 5px 15px;
     font-size: 15px;
-    color: white;
+    /*color: white;*/
     font-weight: 520;
     transition: all .1s ease-in;
     justify-self: center;
 }
+/*.hamburger--links__items{*/
+/*    color: white;*/
+/*}*/
 
 .hamburger--menu span{
     display: block;
-    width: 30px;
-    height: 5px;
+    width: 25px;
+    height: 3px;
     background-color: var(--first-color);
-    margin: 5px 30px ;
+    margin: 3px 30px ;
     border-radius: 10px;
 
 }
+
 
 
 #hamburger--links{
@@ -68,20 +69,18 @@ ul {
     padding: 10px 10px;
     display: block;
     opacity: 0;
-    transition: all .2s;
+    transition: all .2s ;
     width: 100%;
 }
 #hamburger--links li {
     transition: all 0.2s;
 }
-.
 
 
 
 
-#caseStudiesLink , #detailsLink{
-    color: var(--first-color);
-}
+
+
 
 .main--nav a:hover , #hamburger--links a:hover{
     /*background-color: gray;*/
@@ -90,7 +89,7 @@ ul {
 
 
 @media (min-width: 809px ) {
-    .hamburger--holder{
+    #hamburger--holder{
         display: flex;
         justify-content: end;
         align-items: start;

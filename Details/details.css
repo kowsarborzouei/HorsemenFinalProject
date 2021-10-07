@@ -12,6 +12,15 @@ body {
     --wrapper-background: #fff;
     --images-icons-background: #c9916b;
 }
+/*#ham-caseStudiesLink , #ham-detailsLink , #main-caseStudiesLink , #main-detailsLink {*/
+/*    color: var(--first-color);*/
+/*}*/
+.nav--homeLink , .nav--othersLink{
+    color: white;
+}
+.nav--detailsLink , .nav--caseStudiesLink {
+    color: var(--first-color);
+}
 
 .container_main {
     display: grid;

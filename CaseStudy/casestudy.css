@@ -468,7 +468,7 @@ g:hover {
 
 
 @media screen and (max-width: 1239px) {
-    h1 {
+    .header--content {
         color: var(--Header-content);
         text-align: center;
         margin: 20vh 4vw 0 4vw;
@@ -658,7 +658,7 @@ g:hover {
 }
 
 @media screen and (max-width: 767px ) {
-    h1 {
+    .header--content {
         color: var(--Header-content);
         text-align: center;
         margin: 50vh 4vw 0 4vw;

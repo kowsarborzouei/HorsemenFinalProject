@@ -13,6 +13,7 @@
 }
 .hamburgerFixer--sticky{
     margin-top: 50px;
+    /*width: 100%;*/
 }
 nav{
     display: flex;
@@ -35,7 +36,7 @@ ul {
 .main--nav , #hamburger--links {
      display: none;
      list-style-type: none;
-    margin-right: 15px;
+
  }
 
 .main--nav a , #hamburger--links a {
@@ -55,16 +56,17 @@ ul {
     background-color: var(--first-color);
     margin: 5px 30px;
     border-radius: 10px;
-    .
+
 }
 
 
 #hamburger--links{
     background-color:var(--background-color);
-    padding: 3vw 2vh;
+    padding: 10px 10px;
     display: block;
     opacity: 0;
     transition: all .2s;
+    width: 100%;
 }
 #hamburger--links li {
     transition: all 0.2s;
@@ -89,9 +91,12 @@ ul {
         display: flex;
         justify-content: end;
         align-items: start;
+
     }
     #hamburger--links{
         padding-right: 100px;
+        width: 16%;
+        margin-right: 10px;
     }
     /*#hamburger--links li {*/
     /*    display: none;*/
@@ -106,6 +111,7 @@ ul {
     }
     .main--nav{
         display: flex;
+        margin-right: 15px;
     }
     #hamburger--links {
         padding: 0;

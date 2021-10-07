@@ -43,7 +43,7 @@ body {
     grid-area: aside_start;
     /* background-color: pink;*/
 }
-h1 {
+.first-title-h1 {
     font-size: 62px;
     line-height: 72px;
     font-weight: 700;
@@ -53,7 +53,7 @@ h1 {
     margin-top: 20vh;
 }
 
-h6 {
+.first-test-h6 {
     text-align: center;
     font-size: 2em;
     line-height: 5.5vh;
@@ -221,7 +221,6 @@ p {
     margin-left: -5px;
     padding: 1rem;
     color:  var(--wrapper-background);
-
 }
 .icon:hover{
     background-color: var(--wrapper-background);
@@ -242,7 +241,7 @@ p {
     height: 100%;
     grid-area: footer_end;
     /*background-color: #ed3b2e;*/
-    background-image: url(../kowsar/Image/comp6-footer-bg.png), url(../kowsar/Image/comp6-patternbg.png);
+    background-image: url(../Image/comp6-footer-bg.png), url(../Image/comp6-patternbg.png);
     background-position: left center;
     background-repeat: no-repeat, repeat;
     background-size: auto;
@@ -481,6 +480,33 @@ g:hover {
     color: var(--first-color);
 }
 
+/*arash's codes-------------------------------------- */
+.fixed-button-container{
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 25px
+}
+.fixed-button{
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    bottom: 5vh;
+    left: 0;
+    background: url("../Image/SquareBox.jpg");
+    background-size: 80px 80px;
+}
+.fixed-icon{
+    color: transparent;
+}
+.fixed-button:hover{
+    background: white;
+}
+.fixed-button-container:hover{
+    display: block;
+
+
+}
 
 /*********************end footer*******************/
 
@@ -573,7 +599,7 @@ g:hover {
         height: 100%;
         grid-area: footer_end;
         /*background-color: #ed3b2e;*/
-        background-image: url(../kowsar/Image/comp6-footer-bg.png), url(../kowsar/Image/comp6-patternbg.png);
+        background-image: url(../Image/comp6-footer-bg.png), url(../Image/comp6-patternbg.png);
         background-position: initial ;
         background-repeat: no-repeat, repeat;
         background-size: auto;

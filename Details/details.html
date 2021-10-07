@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="ipade_details.css">
+    <link rel="stylesheet" href="phone_details.css">
     <link rel="stylesheet" href="../Normalize.css">
     <link rel="stylesheet" href="../Navigation/NavStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -59,8 +61,8 @@
     </div>
     <div class="aside_start">
         <div>
-            <h1>Marketing strategy <br>for Larveno</h1>
-            <h6>Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+            <h1 class="first-title-h1">Marketing strategy <br>for Larveno</h1>
+            <h6 class="first-test-h6">Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
                 nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
                 quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h6>
         </div>
@@ -88,8 +90,8 @@
     </div>
     <div class="aside_end">
         <div>
-            <h6 class="h6--part1--aside_end">Our mission</h6>
-            <h6>Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+            <h6 class="h6--part1--aside_end first-test-h6">Our mission</h6>
+            <h6 class="first-test-h6">Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
                 nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
                 quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h6>
         </div>
@@ -222,6 +224,11 @@
         </div>
     </div>
     <!--******************footer*****************-->
+    <a  onmouseover="leftButtonShow()" onmouseleave="leftButtonFade()" class="fixed-button" href="#">
+        <div>
+            <div  class="fixed-button-container"><i id="leftButton-icon" class="fas fa-angle-left fa-2x fixed-icon"></i></div>
+        </div>
+    </a>
 
 
 </div>
@@ -230,6 +237,16 @@
 
 
 
+</div>
+<script>
+    let x = document.getElementById("leftButton-icon");
+    const leftButtonShow =() => {
+        x.style.color = "gray";
+    }
+    const leftButtonFade = () => {
+      x.style.color="transparent"
+    }
+</script>
 
 <script>
     let y = document.getElementsByClassName("hamburger--links__items")

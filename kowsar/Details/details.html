@@ -17,7 +17,7 @@
     <div class="header">
         <div class="image__header">
             <nav id="nav">
-                <img src="/Navigation/Image/Small-logo.png">
+                <img onclick="test()" src="/Navigation/Image/Small-logo.png">
                 <ul class="main--nav">
                     <li><a href="#">Home</a></li>
                     <li><a href="#" id="caseStudiesLink">Case studies</a></li>
@@ -29,7 +29,7 @@
                 </ul>
 
                 <div class="hamburger--menu" >
-                    <a href="javascript:void(0);"  onclick="hamburgerFunction()">
+                    <a href="javascript:void(0);"  onclick="  hamburgerShow();hamburgerSmooth()">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -39,9 +39,20 @@
             </nav>
             <div class="hamburger--holder">
                 <ul id="hamburger--links" >
-                    <li id="hamburger__firstLink"><a  href="#home">Home</a></li>
-                    <li id="hamburger__secondLink" ><a  href="#case studies">Case studies</a></li>
-                    <li id="hamburger__thirdLink"><a href="#details">Details</a></li>
+<!--                    <li id="hamburger__firstLink"><a  href="#home">Home</a></li>-->
+<!--                    <li id="hamburger__secondLink" ><a  href="#case studies">Case studies</a></li>-->
+<!--                    <li id="hamburger__thirdLink"><a href="#details">Details</a></li>-->
+<!--                    <li id="hamburger__4thLink"><a href="#details">Offer</a></li>-->
+<!--                    <li id="hamburger__5thLink"><a href="#details">About</a></li>-->
+<!--                    <li id="hamburger__6thLink"><a href="#details">Contact</a></li>-->
+<!--                    <li id="hamburger__7thLink"><a href="#details">Buy Now</a></li>-->
+                    <li class="hamburger--links__items"><a  href="#home">Home</a></li>
+                    <li class="hamburger--links__items" ><a  href="#case studies">Case studies</a></li>
+                    <li class="hamburger--links__items"><a href="#details">Details</a></li>
+                    <li class="hamburger--links__items"><a href="#details">Offer</a></li>
+                    <li class="hamburger--links__items"><a href="#details">About</a></li>
+                    <li class="hamburger--links__items"><a href="#details">Contact</a></li>
+                    <li class="hamburger--links__items"><a href="#details">Buy Now</a></li>
                 </ul>
             </div>
         </div>
@@ -221,28 +232,58 @@
 
 
 <script>
+    let y = document.getElementsByClassName("hamburger--links__items")
     let x = document.getElementById("hamburger--links");
-    let y = document.getElementById("hamburger__firstLink");
-    let z = document.getElementById("hamburger__secondLink");
-    let k = document.getElementById("hamburger__thirdLink");
+    const hamburgerSmooth = () => {
+        // let i ;
+        // console.log(y)
+        for ( i = 0 ; i < y.length; ++i)  {
+            if (x.style.opacity === "1"){
+                y[i].style.marginBottom = "30px"
+            }else {
+                y[i].style.marginBottom = "0"
+            }
+        }
+    }
+    // let first = document.getElementById("hamburger__firstLink");
+    // let second = document.getElementById("hamburger__secondLink");
+    // let third = document.getElementById("hamburger__thirdLink");
+    // let fourth = document.getElementById("hamburger__4thLink");
+    // let fifth = document.getElementById("hamburger__5thLink");
+    // let sixth = document.getElementById("hamburger__6thLink");
+    // let seventh = document.getElementById("hamburger__7thLink");
 
     const closeMenu =() => {
         x.style.opacity = "0";
-        y.style.marginBottom = "0"
-        z.style.marginBottom = "0"
-        k.style.marginBottom = "0"
+        // first.style.marginBottom = "0"
+        // second.style.marginBottom = "0"
+        // third.style.marginBottom = "0"
+        // third.style.marginBottom = "0"
+        // third.style.marginBottom = "0"
+        // third.style.marginBottom = "0"
+        // third.style.marginBottom = "0"
     }
-    const hamburgerFunction =() => {
+    const hamburgerShow =() => {
         if (x.style.opacity === "0") {
             x.style.opacity = "1";
-            y.style.marginBottom = "30px"
-            z.style.marginBottom = "30px"
-            k.style.marginBottom = "20px"
+            // first.style.marginBottom = "30px"
+            // second.style.marginBottom = "30px"
+            // third.style.marginBottom = "30px"
+            // third.style.marginBottom = "30px"
+            // third.style.marginBottom = "30px"
+            // third.style.marginBottom = "30px"
+            // third.style.marginBottom = "30px"
+            // third.style.marginBottom = "30px"
         } else {
             x.style.opacity = "0";
-            y.style.marginBottom = "0"
-            z.style.marginBottom = "0"
-            k.style.marginBottom = "0"
+            // first.style.marginBottom = "0"
+            // second.style.marginBottom = "0"
+            // third.style.marginBottom = "0"
+            // third.style.marginBottom = "0"
+            // third.style.marginBottom = "0"
+            // third.style.marginBottom = "0"
+            // third.style.marginBottom = "0"
+            // third.style.marginBottom = "0"
         }
     }
 </script>

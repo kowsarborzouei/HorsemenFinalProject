@@ -5,6 +5,14 @@
     --images-icons-background: #c9916b;
 }
 
+.nav--homeLink , .nav--othersLink, .nav--detailsLink{
+    color: white;
+}
+.nav--caseStudiesLink  {
+    color: var(--first-color);
+}
+
+
 body {
     /*margin: 0;*/
     font-family: 'Comfortaa', cursive;

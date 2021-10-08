@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Casestudy_merge</title>
+    <link rel="stylesheet" href="../modal/modal.css">
     <link rel="stylesheet" href="casestudy.css">
+
 <!--    <link rel="stylesheet" href="ipade_casestudy.css">-->
 <!--    <link rel="stylesheet" href="phone_casestudy.css">-->
     <link rel="stylesheet" href="../Normalize.css">
@@ -27,7 +29,7 @@
                         src="../Image/2cards.jpg"></a>
 
                 <div class="middle__2card__sq">
-                    <a href="#"><i class="fas fa-search icon"></i></a>
+                    <a><i id="myBtn" class="fas fa-search icon"></i></a>
                     <a href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
@@ -170,7 +172,21 @@
 
 
 </div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/2cards.jpg">
+            <span class="close">&times;</span>
+
+        </div>
+    </div>
+
+</div>
+
+<script src="../modal/modal.js"></script>
 
 </body>
 </html>

@@ -14,12 +14,12 @@
     <link href="http://fonts.cdnfonts.com/css/comfortaa-3" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body >
 <div class="container_main">
     <div class="header">
         <div class="image__header">
             <nav id="nav">
-                <img onclick="test()" src="/Navigation/Image/Small-logo.png">
+                <img onclick="closeHamburger()" src="/Navigation/Image/Small-logo.png">
                 <ul class="main--nav">
                     <li><a href="#" class="nav--homeLink">Home</a></li>
                     <li><a href="#" class="nav--caseStudiesLink"  >Case studies</a></li>
@@ -30,7 +30,7 @@
                     <li><a  href="#" class="nav--othersLink" >Buy Now</a></li>
                 </ul>
 
-                <div onclick=" hamburgerShow() ; hamburgerSmooth() " class="hamburger--menu" >
+                <div onclick=" hamburgerShow()  " class="hamburger--menu" >
                     <a href="#">
                         <span></span>
                         <span></span>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="aside_start">
+    <div onclick="closeHamburger()" class="aside_start">
         <div>
             <h1 class="first-title-h1">Marketing strategy <br>for Larveno</h1>
             <h6 class="first-test-h6">Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
@@ -60,7 +60,7 @@
                 quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h6>
         </div>
     </div>
-    <div class="container">
+    <div onclick="closeHamburger()" class="container">
         <div class="container__image">
             <div class="image1">
                 <img class="image__big" src="../Image/comp6-single-image1.png">
@@ -81,7 +81,7 @@
 
         </div>
     </div>
-    <div class="aside_end">
+    <div onclick="closeHamburger()" class="aside_end">
         <div>
             <h6 class="h6--part1--aside_end first-test-h6">Our mission</h6>
             <h6 class="first-test-h6">Excepteur sint occaecat odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
@@ -89,7 +89,7 @@
                 quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</h6>
         </div>
     </div>
-    <div class="image_end">
+    <div onclick="closeHamburger()" class="image_end">
         <div class="image_end--grid">
             <div class="text">
                 <p>Our case studies</p>
@@ -121,7 +121,7 @@
     </div>
 
 
-    <div class="footer_end">
+    <div onclick="closeHamburger()" class="footer_end">
         <div class="footer_end--grid">
             <div class="input--footer">
                 <h3>Level 13, 2 Elizabeth St,<br>
@@ -217,7 +217,7 @@
         </div>
     </div>
     <!--******************footer*****************-->
-    <a  onmouseover="leftButtonShow()" onmouseleave="leftButtonFade()" class="fixed-button" href="#">
+    <a onclick="closeHamburger()"  onmouseover="leftButtonShow()" onmouseleave="leftButtonFade()" class="fixed-button" href="#">
         <div>
             <div  class="fixed-button-container"><i id="leftButton-icon" class="fas fa-angle-left fa-2x fixed-icon"></i></div>
         </div>
@@ -233,37 +233,36 @@
 </div>
 
 <script>
-    let x = document.getElementById("leftButton-icon");
-    let y = document.getElementsByClassName("hamburger--links__items")
+    let leftButton = document.getElementById("leftButton-icon");
+    let hamburgerClasses = document.getElementsByClassName("hamburger--links__items")
     let hamburger = document.getElementById("hamburger--links");
 
+
     const leftButtonShow =() => {
-        x.style.color = "gray";
+        leftButton.style.color = "gray";
     }
     const leftButtonFade = () => {
-      x.style.color="transparent"
+      leftButton.style.color="transparent"
     }
+
+    const closeHamburger = () => {
+        hamburger.style.opacity = "0";
+        for (i = 0; i < hamburgerClasses.length; ++i) {
+            hamburgerClasses[i].style.marginBottom = "0"
+        }
+    }
+
     const hamburgerShow =() => {
         if (hamburger.style.opacity === "0") {
             hamburger.style.opacity = "1";
-
-        } else {
-            hamburger.style.opacity = "0";
-        }
-    }
-    const hamburgerSmooth = () => {
-
-        for ( i = 0 ; i < y.length; ++i)  {
-            if (hamburger.style.opacity === "1"){
-                y[i].style.marginBottom = "30px"
-            }else {
-                y[i].style.marginBottom = "0"
+            for (i = 0; i < hamburgerClasses.length; ++i) {
+                hamburgerClasses[i].style.marginBottom = "30px"
             }
+        } else {
+            closeHamburger()
         }
     }
-    const closeMenu =() => {
-        x.style.opacity = "0";
-    }
+
     window.onscroll = function() {headerFixer()};
     let header = document.getElementById("nav");
     let sticky = header.offsetTop;

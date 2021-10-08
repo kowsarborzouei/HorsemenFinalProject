@@ -19,7 +19,7 @@
     <div class="header">
         <div class="image__header">
             <nav id="nav">
-                <img onclick="closeHamburger()" src="/Navigation/Image/Small-logo.png">
+                <img id="nav__img" onclick="closeHamburger()" src="/Navigation/Image/Small-logo.png">
                 <ul class="main--nav">
                     <li><a href="#" class="nav--homeLink">Home</a></li>
                     <li><a href="#" class="nav--caseStudiesLink"  >Case studies</a></li>
@@ -31,11 +31,13 @@
                 </ul>
 
                 <div onclick=" hamburgerShow()  " class="hamburger--menu" >
+
                     <a href="#">
+
                         <span></span>
                         <span></span>
                         <span></span>
-                        <!--           <i class="fa fa-bars"></i>-->
+<!--                                   <i class="fa fa-bars"></i>-->
                     </a>
                 </div>
             </nav>
@@ -232,10 +234,13 @@
 
 </div>
 
+
+
 <script>
     let leftButton = document.getElementById("leftButton-icon");
     let hamburgerClasses = document.getElementsByClassName("hamburger--links__items")
     let hamburger = document.getElementById("hamburger--links");
+    let navImg= document.getElementById("nav__img")
 
 
     const leftButtonShow =() => {
@@ -271,12 +276,15 @@
         if (window.pageYOffset > sticky ) {
             header.classList.add("headerFixer--sticky");
             hamburger.classList.add("hamburgerFixer--sticky");
+            navImg.classList.add("nav__img--smaller")
 
         } else {
             header.classList.remove("headerFixer--sticky");
             hamburger.classList.remove("hamburgerFixer--sticky");
+            navImg.classList.remove("nav__img--smaller")
         }
     }
+
 
 </script>
 </body>

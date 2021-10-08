@@ -11,29 +11,34 @@
     background-color: var(--detail--navBackground);
     animation: slideInDown;
     animation-duration: 0.3s ;
+    /*animation-duration: 0.00001s ;*/
 }
 .hamburgerFixer--sticky{
-    margin-top: 50px;
+    margin-top: 60px;
     position: fixed;
     background-color: var(--detail--navBackground);
+}
+.nav__img--smaller{
+    width: 150px;
+}
+ul{
+    margin: 0;
 }
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 60px;
     padding-left: 32px;
     width: 98%;
     z-index: 3;
+    background-color: var(--detail--navBackground);
 }
 nav img {
-    width: 150px;
+    width: 200px;
     margin-top: 5px;
 }
 
-ul {
-    margin: 0;
-}
 
 .main--nav , #hamburger--links {
      display: none;
@@ -49,17 +54,14 @@ ul {
     transition: all .1s ease-in;
     justify-self: center;
 }
-/*.hamburger--links__items{*/
-/*    color: white;*/
-/*}*/
+
 
 .hamburger--menu span{
     display: block;
-    width: 25px;
-    height: 3px;
+    width: 20px;
+    height: 2px;
     background-color: var(--first-color);
-    margin: 3px 30px ;
-    border-radius: 10px;
+    margin: 4px 35px ;
 }
 
 
@@ -77,6 +79,11 @@ ul {
     transition: all 0.2s;
 }
 
+ion-icon {
+    color: red;
+    width: 150px;
+}
+
 
 
 
@@ -90,6 +97,9 @@ ul {
 
 
 @media (min-width: 809px ) {
+    nav{
+        background-color: transparent;
+    }
     #hamburger--holder{
         display: flex;
         justify-content: end;
@@ -109,6 +119,9 @@ ul {
 
 }
 @media (min-width: 1230px) {
+    nav{
+        background-color: transparent;
+    }
     .hamburger--menu{
         display: none;
     }

@@ -4,6 +4,7 @@
     --third--color:#d6dad8;
     --background-color:#2d453b;
 }
+
 @media screen and (min-width: 1240px){
 
     body {
@@ -22,12 +23,12 @@
     .header {
         width: 100vw;
         /*height: 45vh;*/
-        height: 70vh;
+        height: 95vh;
         display: flex;
         flex-direction: row;
         background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png);
         background-position: top;
-        background-size: 35vw 60vh, cover;
+        background-size: 35vw 70vh, cover;
         background-repeat: no-repeat;
         justify-content: space-between;
         align-items: flex-start;
@@ -37,9 +38,9 @@
 
     .header__imageholder {
         display: flex;
-        width: 45vw;
+        width: 55vw;
         /*height: 45vh;*/
-        height: 70vh;
+        height: 95vh;
         justify-content: right;
         align-self: end;
         margin-left: -20vw;
@@ -55,22 +56,23 @@
     .header__text {
         align-self: center;
         color: var(--first-color);
-        font-size: 5vw;
-        font-weight: bolder;
+        font-size: 69px;
+        font-weight: 700;
         width: 60vw;
-        line-height: 9vh;
+        line-height: 74px;
         padding-left: 5vw;
         /*margin-right: -100px;*/
     }
 
     .header__buttonHolder__button {
-        font-size: 1.5vw;
+        font-size: 18px;
         color: var(--second-color);
         padding: 13px 20px;
         border-color: var(--second-color);
         border-style: solid;
         border-radius: 25px;
         border-width: 2px;
+        font-weight: 700;
     }
 
     .header__buttonHolder {
@@ -92,7 +94,7 @@
 
     .secondpart__circledtextHolder__image {
         /*width: 70vw;*/
-        width: 70%;
+        width: 60%;
         margin-top: -20vh;
     }
 
@@ -103,7 +105,7 @@
     }
     .secondPart-grid{
         display: grid;
-        grid-template: 45rem 20rem 30rem 4rem 20rem / 50vw 50vw;
+        grid-template: 65rem 30rem 40rem 7rem 50vh / 50vw 50vw;
         grid-template-areas: "walls about-us"
                              "what-can blank"
                              "icons icons"
@@ -125,7 +127,8 @@
     .what-can{
         grid-area: what-can;
         margin-top: 5vh;
-        margin-left: 7vw;
+        margin-left: 11vw;
+        padding-top: 60px;
         font-size: 1rem;
     }
 
@@ -144,13 +147,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.1rem;
-        font-weight: lighter;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
     }
 
     .slider{
         grid-area: slider;
-        background-color: dodgerblue;
+        /*background-color: dodgerblue;*/
     }
 
     /*----------------my codes-----------------------*/
@@ -160,25 +164,27 @@
     }
 
     .secondpart__title {
-        margin-top: 70px;
-        font-size: 1rem;
+        margin-top: 40px;
+        margin-bottom: 15px;
+        font-size: 18px;
         color: gray;
         font-weight: lighter;
     }
 
 
     .secondpart__text {
-        font-size: 1.5rem;
-        line-height: 3.5vh;
-        font-weight: bold;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 700;
+        letter-spacing: 0;
     }
 
     .secondpart__button {
-        font-size: 1rem;
+        font-size: 17px;
         color: var(--second-color);
-        padding: 1.2vh 3vw;
-        border-radius: 44vw;
-        font-weight: bold;
+        padding: 10px 35px;
+        border-radius: 50px;
+        font-weight: 500;
         background-color: var(--first-color);
     }
 
@@ -208,15 +214,15 @@
     .secondpart__4Image span {
         display: inline-block;
         margin-top: 1vh;
-        font-size: 1.5rem;
-        line-height: 3.5vh;
-        font-weight: bold;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 700;
     }
 
     /*my codes---------------------------------------*/
     .belowSlider-grid{
         display: grid;
-        grid-template: 4rem 40rem / 50vw 50vw;
+        grid-template: 6rem 60rem / 50vw 50vw;
         grid-template-areas: "seeMore-bar seeMore-bar"
                              "people-img below-text";
         overflow: hidden;
@@ -242,12 +248,13 @@
         /*justify-content: center;*/
         height: 100%;
         text-align: center;
-        font-size: 1.2rem;
-        font-weight: lighter;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
     }
 
     .belowSlider__seperator span{
-        padding-bottom: 1vh;
+        padding-top: 16px;
     }
 
     .belowSlider__imageHolder{
@@ -255,7 +262,7 @@
         /*!* height: 35rem; *!*/
         /*width: 50vw;*/
         background: url("images&icons/peopleatTable.jpg");
-        background-size: 50vw 40rem , cover;
+        background-size: 50vw 60rem , cover;
         background-repeat: no-repeat;
     }
     .belowSlider img {
@@ -270,14 +277,12 @@
         background-color: var(--background-color);
         background-size: 50vw 47rem;
         color: var(--second-color);
-        font-size: 2.5vw;
-        line-height: 7.5vh;
-        font-weight: bold;
 
     }
     .belowSlider p {
-        font-weight: normal;
-        font-size: 2vw;
+        font-size: 18px;
+        line-height: 15px;
+        font-weight: 300;
 
     }
 
@@ -285,4 +290,10 @@
         margin: 10vh 1vw;
     }
 
+    .belowSlider-textContainer h2{
+        font-size: 46px !important;
+        line-height: 53px;
+        font-weight: 700;
+
+    }
 }

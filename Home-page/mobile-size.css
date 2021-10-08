@@ -21,7 +21,7 @@
     }
 
     .header {
-        width: 95vw;
+        width: 100vw;
         /*height: 45vh;*/
         height: 45vh;
         display: flex;
@@ -63,7 +63,7 @@
     }
 
     .header__buttonHolder__button {
-        font-size: 1.8vw;
+        font-size: 7px;
         color: var(--second-color);
         padding: 7px 15px;
         border-color: var(--second-color);
@@ -79,7 +79,7 @@
     /*my edit--------------------------------*/
     .secondPart-grid {
         display: grid;
-        grid-template: 40rem 40rem 20rem 75rem 3rem 15rem / 100vw;
+        grid-template: 70rem 70rem 25rem 130rem 6rem 30vh / 100vw;
         grid-template-areas: "walls "
                          "about-us"
                          "what-can"
@@ -111,7 +111,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0 7vw;
+        padding: 60px 7vw;
     }
 
     .caseStudy-bar {
@@ -122,12 +122,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 3vw;
+        font-size: 13px;
+        line-height: 19px;
+        font-weight: 300;
     }
 
     .slider {
         grid-area: slider;
-        background-color: dodgerblue;
     }
 
     /*my edit-----------------------------------*/
@@ -154,14 +155,19 @@
     }
 
     .secondpart__text {
-        font-size: 3.5vw;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0;
         font-weight: 700;
         /*font-weight: bold;*/
     }
 
     .secondpart__title {
         margin-top: 30px;
-        font-size: 3.5vw;
+        margin-bottom: 15px;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0;
         color: gray;
         font-weight: lighter;
     }
@@ -169,8 +175,8 @@
     .secondpart__button {
         font-size: 3.5vw;
         color: var(--second-color);
-        padding: 3.5vw 5.5vh;
-        border-radius: 44vw;
+        padding: 10px 35px;
+        border-radius: 50px;
         font-weight: bold;
         background-color: var(--first-color);
     }
@@ -195,6 +201,11 @@
     .secondpart__4Image p {
         color: var(--first-color);
         font-weight: bold;
+    }
+    .secondpart__4Image span{
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0;
     }
 
     /*my codes---------------------------------------*/
@@ -254,4 +265,12 @@
         font-size: 4vw;
 
     }
+
+    .belowSlider-textContainer h2{
+        font-size: 40px !important;
+        line-height: 60px;
+        font-weight: 700;
+        letter-spacing: 0;
+    }
+
 }

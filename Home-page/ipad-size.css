@@ -91,7 +91,7 @@
 
     .secondpart__circledtextHolder__image {
         /*width: 70vw;*/
-        width: 100%;
+        width: 80%;
         margin-top: -20vh;
     }
 
@@ -102,7 +102,7 @@
     }
     .secondPart-grid{
         display: grid;
-        grid-template: 45rem 20rem 30rem 4rem 20rem / 50vw 50vw;
+        grid-template: 70rem 30rem 40rem 6rem 30vh / 50vw 50vw;
         grid-template-areas: "walls about-us"
                              "what-can blank"
                              "icons icons"
@@ -123,7 +123,7 @@
     .what-can{
         grid-area: what-can;
         margin-top: 5vh;
-        margin-left: 7vw;
+        margin-left: 3vw;
     }
 
     .icons{
@@ -141,12 +141,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2vw;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
     }
 
     .slider{
         grid-area: slider;
-        background-color: dodgerblue;
     }
 
     /*----------------my codes-----------------------*/
@@ -156,24 +157,26 @@
     }
 
     .secondpart__text {
-        font-size: 18px;
-        line-height: 3vh;
-        font-weight: bolder;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 700;
+        letter-spacing: 0;
     }
 
     .secondpart__title {
         margin-top: 70px;
-        font-size: 1rem;
+        font-size: 18px;
+        line-height: 25px;
         color: gray;
-        font-weight: lighter;
+        font-weight: 300;
     }
 
     .secondpart__button {
-        font-size: 1rem;
+        font-size: 17px;
         color: var(--second-color);
-        padding: 1.7vw 3vh;
-        border-radius: 44vw;
-        font-weight: bold;
+        padding: 10px 35px;
+        border-radius: 50px;
+        font-weight: 500;
         background-color: var(--first-color);
     }
 
@@ -203,13 +206,16 @@
     .secondpart__4Image span {
         display: inline-block;
         margin-top: 1vh;
-        font-size: 3vw;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 700;
+        letter-spacing: 0;
     }
 
     /*my codes---------------------------------------*/
     .belowSlider-grid{
         display: grid;
-        grid-template: 4rem 40rem / 50vw 50vw;
+        grid-template: 6rem 65rem / 50vw 50vw;
         grid-template-areas: "seeMore-bar seeMore-bar"
                              "people-img below-text";
     }
@@ -233,13 +239,15 @@
         /*align-items: center;*/
         /*justify-content: center;*/
         text-align: center;
-        font-size: 2vw;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 25px;
         vertical-align: middle;
     }
 
     .belowSlider__seperator span{
         display: inline-block;
-        padding-top: 2vh;
+        padding-top: 16px;
     }
 
     .belowSlider__imageHolder{
@@ -247,7 +255,7 @@
         /*!* height: 35rem; *!*/
         /*width: 50vw;*/
         background: url("images&icons/peopleatTable.jpg");
-        background-size: 50vw 40rem , cover;
+        background-size: 50vw 65rem , cover;
         background-repeat: no-repeat;
     }
     .belowSlider img {
@@ -278,5 +286,11 @@
         line-height: 6vh;
     }
 
+    .belowSlider-textContainer h2{
+        font-size: 40px !important;
+        line-height: 60px;
+        font-weight: 700;
+        letter-spacing: 0;
+    }
 
 }

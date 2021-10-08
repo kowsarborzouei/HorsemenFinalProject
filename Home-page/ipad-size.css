@@ -27,8 +27,8 @@
         flex-direction: row;
         background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png);
         background-position: top;
-        background-size: 35vw 35vh, cover;
-        background-repeat: no-repeat;
+        background-size: 35vw 35vh, auto;
+        background-repeat: no-repeat,repeat;
         justify-content: space-between;
         align-items: flex-start;
         padding-left: 5vw;

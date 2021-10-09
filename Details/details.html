@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../CaseStudy/modal.css">
     <link rel="stylesheet" href="ipade_details.css">
     <link rel="stylesheet" href="phone_details.css">
     <link rel="stylesheet" href="../Normalize.css">
@@ -99,7 +100,7 @@
             <div class="three_image1">
                 <a href="#"><img class="three--image" src="../Image/2cards.jpg"></a>
                 <div class="middle-image">
-                    <a href="#"><i class="fas fa-search icon"></i></a>
+                    <a ><i id="myBtn_2card" class="fas fa-search icon"></i></a>
                     <a href="#"><i class="fas fa-link icon"></i></a>
                 </div>
 
@@ -107,14 +108,14 @@
             <div class="three_image2">
                 <a href="#"><img class="three--image" src="../Image/Lamp.jpg"></a>
                 <div class="middle-image">
-                    <a href="#"><i class="fas fa-search icon"></i></a>
+                    <a ><i id="myBtn_lamp" class="fas fa-search icon"></i></a>
                     <a href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
             <div class="three_image3">
                 <a href="#"><img class="three--image" src="../Image/SquareBox.jpg"></a>
                 <div class="middle-image">
-                    <a href="#"><i class="fas fa-search icon"></i></a>
+                    <a><i id="myBtn_squareBox" class="fas fa-search icon"></i></a>
                     <a href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
@@ -227,14 +228,66 @@
 
 
 </div>
+</div>
 
+<!--#################################################### Modal #######################################################-->
+<!-- The Modal -->
+<div id="myModal_2card" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/2cards.jpg">
+            <span class="close_2card">&times;</span>
 
+        </div>
+    </div>
 
+</div>
+<!-- The Modal -->
+<div id="myModal_lamp" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/Lamp.jpg">
+            <span class="close_lamp">&times;</span>
+
+        </div>
+    </div>
 
 </div>
 
+<!-- The Modal -->
+<div id="myModal_squareBox" class="modal">
 
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/SquareBox.jpg">
+            <span class="close_squareBox">&times;</span>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<!--<div id="myModal_bag" class="modal">-->
+
+<!--    &lt;!&ndash; Modal content &ndash;&gt;-->
+<!--    <div class="modal-content">-->
+<!--        <div class="modal-header">-->
+<!--            <img class="modal-image" src="../Image/Bag.jpg">-->
+<!--            <span class="close_bag">&times;</span>-->
+
+<!--        </div>-->
+<!--    </div>-->
+
+<!--</div>-->
+
+
+<!--############################################### End Modal ###########################################-->
 
 <script>
     let leftButton = document.getElementById("leftButton-icon");
@@ -287,5 +340,6 @@
 
 
 </script>
+<script src="../CaseStudy/modal.js"></script>
 </body>
 </html>

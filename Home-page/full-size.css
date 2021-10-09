@@ -23,13 +23,13 @@
     .header {
         width: 100vw;
         /*height: 45vh;*/
-        height: 95vh;
+        height: 100vh;
         display: flex;
         flex-direction: row;
-        background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png);
-        background-position: top;
-        background-size: 35vw 70vh, auto;
-        background-repeat: no-repeat, repeat;
+        background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png),url(../Image/company6_glow-1-1.png);
+        background-position: top center ;
+        background-size: 33vw 80vh, auto,auto;
+        background-repeat: no-repeat, repeat ,repeat;
         justify-content: space-between;
         align-items: flex-start;
         padding-left: 5vw;
@@ -51,7 +51,7 @@
 
     .header__imageholder__image {
         width: 85%;
-        margin-right: 5vw;
+        margin-right: 6vw;
         margin-top: 0;
 
     }

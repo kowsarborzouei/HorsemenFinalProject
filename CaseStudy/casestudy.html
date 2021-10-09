@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Casestudy_merge</title>
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="casestudy.css">
     <link rel="stylesheet" href="../Normalize.css">
     <link rel="stylesheet" href="../Navigation/NavStyle.css">
@@ -62,7 +63,7 @@
                         src="../Image/2cards.jpg"></a>
 
                 <div class="middle__2card__sq">
-                    <a class="a_image" href="#"><i class="fas fa-search icon"></i></a>
+                    <a class="a_image" href="#"><i id="myBtn_2card" class="fas fa-search icon"></i></a>
                     <a class="a_image" href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
@@ -73,7 +74,7 @@
                         class="images"
                         src="../Image/Lamp.jpg"></a>
                 <div class="middle__lamp__bag">
-                    <a class="a_image" href="#"><i class="fas fa-search icon"></i></a>
+                    <a class="a_image" href="#"><i id="myBtn_lamp" class="fas fa-search icon"></i></a>
                     <a class="a_image" href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
@@ -82,7 +83,7 @@
                         class="images"
                         src="../Image/SquareBox.jpg"></a>
                 <div class="middle__2card__sq">
-                    <a class="a_image" href="#"><i class="fas fa-search icon"></i></a>
+                    <a class="a_image" href="#"><i id="myBtn_squareBox" class="fas fa-search icon"></i></a>
                     <a class="a_image" href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
@@ -91,7 +92,7 @@
                         class="images"
                         src="../Image/Bag.jpg"></a>
                 <div class="middle__lamp__bag">
-                    <a class="a_image" href="#"><i class="fas fa-search icon"></i></a>
+                    <a class="a_image" href="#"><i id="myBtn_bag" class="fas fa-search icon"></i></a>
                     <a class="a_image" href="#"><i class="fas fa-link icon"></i></a>
                 </div>
             </div>
@@ -200,13 +201,66 @@
         </div>
     </div>
     <!--******************footer*****************-->
+</div>
+</div>
 
+<!--#################################################### Modal #######################################################-->
+<!-- The Modal -->
+<div id="myModal_2card" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/2cards.jpg">
+            <span class="close_2card">&times;</span>
+
+        </div>
+    </div>
 
 </div>
 
+<!-- The Modal -->
+<div id="myModal_bag" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/Bag.jpg">
+            <span class="close_bag">&times;</span>
+
+        </div>
+    </div>
 
 </div>
 
+<!-- The Modal -->
+<div id="myModal_lamp" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/Lamp.jpg">
+            <span class="close_lamp">&times;</span>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- The Modal -->
+<div id="myModal_squareBox" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <img class="modal-image" src="../Image/SquareBox.jpg">
+            <span class="close_squareBox">&times;</span>
+
+        </div>
+    </div>
+
+</div>
+<!--############################################### End Modal ###########################################-->
 
 <script>
     let x = document.getElementById("leftButton-icon");
@@ -252,5 +306,6 @@
     }
 
 </script>
+<script src="modal.js"></script>
 </body>
 </html>

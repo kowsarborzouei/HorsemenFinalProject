@@ -34,6 +34,7 @@
         align-items: flex-start;
         padding-left: 5vw;
 
+
     }
 
     .header__imageholder {
@@ -45,12 +46,14 @@
         align-self: end;
         margin-left: -20vw;
         overflow: hidden;
+
     }
 
     .header__imageholder__image {
         width: 85%;
         margin-right: 5vw;
         margin-top: 0;
+
     }
 
     .header__text {
@@ -90,12 +93,14 @@
     .secondpart__circledtextHolder {
         display: flex;
         justify-content: end;
+        z-index: 5 !important;
     }
 
     .secondpart__circledtextHolder__image {
         /*width: 70vw;*/
         width: 60%;
         margin-top: -20vh;
+        z-index: 5 !important;
     }
 
     /*----------------my codes-----------------------*/
@@ -111,7 +116,7 @@
                              "icons icons"
                              "caseStudy-bar caseStudy-bar"
                              "slider slider";
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
 
     .walls{
@@ -122,6 +127,7 @@
         grid-area: about-us;
         padding: 5vh 8vw;
         background-color: #faf8f7;
+
     }
 
     .what-can{

@@ -78,10 +78,10 @@
                     Subscribe and see what's new
                 </p>
                 <div class="footer--input--button">
-                    <input class="input--footer--style" name="name" type="text" placeholder="Name" aria-required="true"
+                    <input class="input--footer--style error_text" name="name" type="text" placeholder="Name" aria-required="true"
                            aria-invalid="true" aria-describedby="wpcf7-f62-o1-ve-your-name">
                     <span class="wpcf7-not-valid-tip" aria-hidden="true"></span>
-                    <button class="input--footer--button" type="submit" value="send">Send</button>
+                    <button class="input--footer--button" type="submit" value="send" onclick="console.error()">Send</button>
                     <span class="ajax-loader"></span>
                 </div>
                 <div class="wpcf7-response-output-no" aria-hidden="true">One or more fields have an error. Please check
@@ -231,6 +231,7 @@
 <!--############################################### End Modal ###########################################-->
 
 <script src="../modal/modal.js"></script>
+<script src="footer.js"></script>
 
 </body>
 </html>

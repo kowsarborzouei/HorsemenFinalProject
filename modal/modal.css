@@ -44,36 +44,22 @@ body {
 }
 
 /* The Close Button */
-.close {
+.close_2card,.close_bag,.close_lamp,.close_squareBox{
     position: absolute;
     top: -4vh;
     left: 49%;
     color: #CFD8DC;
     float: right;
     font-size: 25px;
-
 }
 
-.close:hover,
-.close:focus {
+
+.close_2card,.close_bag,.close_lamp,.close_squareBox:hover,
+.close_2card,.close_bag,.close_lamp,.close_squareBox:focus {
     color: #FFF;
     text-decoration: none;
     cursor: pointer;
 }
-
-/*.modal-header {*/
-/*    padding: 2px 16px;*/
-/*    background-color: #5cb85c;*/
-/*    color: white;*/
-/*}*/
-
-/*.modal-body {padding: 2px 16px;}*/
-
-/*.modal-footer {*/
-/*    padding: 2px 16px;*/
-/*    background-color: #5cb85c;*/
-/*    color: white;*/
-/*}*/
 
  Add Animation
 @-webkit-keyframes slideIn {

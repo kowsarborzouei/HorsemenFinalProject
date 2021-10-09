@@ -85,6 +85,7 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip {
     text-indent: -9999px !important;
     padding: 0;
     border: none !important;
+    display: none;
 }
 
 .wpcf7-not-valid-tip {
@@ -127,6 +128,7 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
     padding: 0.2em 1em;
     color: var(--third--color);
     font-size: 17px;
+    display: none;
 
 }
 

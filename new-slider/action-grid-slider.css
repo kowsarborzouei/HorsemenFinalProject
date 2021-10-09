@@ -36,8 +36,8 @@ button{
 	-webkit-appearance: none;
 	/*background: white;*/
 	border: 0;
-	color: transparent;
-	background: transparent;
+	color: blue;
+	background: red;
 
 }
 #ct-js-box-slider--next{
@@ -58,12 +58,13 @@ button{
 }
 .image_size_slider{
 
-	width: 35vw;
+	width: 34vw;
 	height: 52vh;
 	opacity: 1;
 	display: block;
 	transition: .5s ease;
 	backface-visibility: hidden;
+
 }
 
 .col-xs-6:hover .middle-image {

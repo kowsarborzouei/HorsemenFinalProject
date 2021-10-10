@@ -19,7 +19,7 @@ const closeHamburger = () => {
     hamburger.style.opacity = "0";
     for (i = 0; i < hamburgerClasses.length; ++i) {
         hamburgerClasses[i].style.marginBottom = "0"
-        hamburgerClasses[i].style.display = "none"
+        // hamburgerClasses[i].style.display = "none"
         // hamburger.style.display = "none";
         // hamburgerClasses[i].style.height= "0"
         // hamburgerClasses[i].style.width = "0"
@@ -32,7 +32,7 @@ const hamburgerShow =() => {
         // hamburger.style.display = "block";
         for (i = 0; i < hamburgerClasses.length; ++i) {
             hamburgerClasses[i].style.marginBottom = "30px"
-            hamburgerClasses[i].style.display = "block"
+            // hamburgerClasses[i].style.display = "block"
             // hamburgerClasses[i].style.height = "100%"
             // hamburgerClasses[i].style.width = "100%"
         }

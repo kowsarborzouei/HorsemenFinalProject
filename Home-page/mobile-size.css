@@ -11,7 +11,7 @@
         width: 100vw;
         height: 200vh;
         margin: auto;
-        font-family: 'Comfortaa', cursive;
+        font-family: 'Comfortaa', cursive !important;
 
         line-height: 3vh;
     }
@@ -183,6 +183,7 @@
 
     .learnMore-button {
         margin-top: 5vh;
+        margin-bottom: 20px;
     }
 
     .secondpart__4Image {
@@ -211,10 +212,11 @@
     /*my codes---------------------------------------*/
     .belowSlider-grid{
         display: grid;
-        grid-template: 3rem 40rem 20rem / 100vw;
+        grid-template: 5rem 50rem 40rem 125vh / 100vw;
         grid-template-areas: "seeMore-bar"
                              "people-img"
-                             "below-text";
+                             "below-text"
+                             "footer_end";
     }
 
     .seeMore-bar{
@@ -223,7 +225,7 @@
     .people-img{
         grid-area: people-img;
         background: url("images&icons/peopleatTable.jpg");
-        background-size: 100vw 40rem;
+        background-size: 100vw 50rem;
 
     }
     .below-text{
@@ -245,14 +247,14 @@
         height: 95vh;
     }
 
-    .belowSlider img {
-        height: 95vh;
-        width: 100vw;
-    }
+    /*.belowSlider img {*/
+    /*    height: 95vh;*/
+    /*    width: 100vw;*/
+    /*}*/
 
     .belowSlider__text {
-        padding: 5vh 8vw;
-        height: 35vh;
+        padding: 70px 8% 50px;
+        height: 40rem;
         background-color: var(--background-color);
         color: var(--second-color);
         font-size: 5vw;
@@ -262,15 +264,202 @@
 
     .belowSlider p {
         font-weight: normal;
-        font-size: 4vw;
+        font-size: 13px;
+        line-height: 19px;
+        letter-spacing: 0;
 
     }
 
     .belowSlider-textContainer h2{
-        font-size: 40px !important;
-        line-height: 60px;
+        font-size: 28px !important;
+        line-height: 32px;
         font-weight: 700;
         letter-spacing: 0;
+    }
+
+    .footer_end--grid {
+        display: grid;
+        grid-template: 55vh 45vh 5vh/auto;
+        grid-template-areas:"input--footer"
+                            "image--footer"
+                             "copy--footer";
+    }
+
+    .footer_end {
+        width: 100%;
+        height: 100%;
+        grid-area: footer_end;
+        /*background-color: #ed3b2e;*/
+        background-image: url(../Image/comp6-footer-bg.png), url(../Image/comp6-patternbg.png);
+        background-position: initial ;
+        background-repeat: no-repeat, repeat;
+        background-size: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .input--footer {
+        grid-area: input--footer;
+        /*background-color: palevioletred;*/
+        padding-right: 0;
+        padding-left: 7.5vw;
+        padding-top: 10vh;
+    }
+
+    h3 {
+        font-size: 21px;
+        line-height: 28px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: var(--second-color);
+    }
+
+    .text2_footer {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: var(--second-color);
+        text-align: left;
+        padding-top: 5vh;
+
+    }
+
+    .input--footer--style {
+        border: 0;
+        outline: none;
+        background: transparent;
+        font-size: 15px;
+        font-family: 'Comfortaa', sans-serif;
+        color: var(--second-color);
+        border-bottom: 1px solid var(--second-color);
+        width: 78vw;
+        padding-bottom: 0.6rem;
+        margin-bottom: 20px;
+    }
+
+    input[type=text]:focus {
+        font-size: 15px;
+        color: gray;
+        width: 78vw;
+    }
+
+    .input--footer--button {
+        width: 78vw;
+        height: 5vh;
+        border: 0;
+        border-radius: 50px;
+        box-sizing: border-box;
+        background-color: var(--first-color);
+        font-size: 13px;
+        color: var(--second-color);
+        font-family: 'Comfortaa', sans-serif;
+        position: absolute;
+        margin-top: 8vh;
+        cursor: pointer;
+    }
+
+    .footer--input--button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        align-items: center;
+        padding-top: 2vh;
+        margin-left: -12vw;
+    }
+
+    .image--footer_position {
+        padding-top: 5vh;
+        padding-left: 8vw;
+    }
+
+
+    .input--footer {
+        grid-area: input--footer;
+        /*background-color: palevioletred;*/
+        padding-right: 0;
+        padding-left: 12vw;
+        padding-top: 11vh;
+    }
+
+    .icon_footer_svg {
+        width: 18px;
+        height: 18px;
+
+    }
+
+    .wpcf7 form, .wpcf7-response-output-no {
+        border: none;
+        float: left;
+        margin: 8vh 0vh 0.5em -1.5em;
+        padding: 0.2em 1em;
+        color: var(--third--color);
+        font-size: 15px;
+
+    }
+
+    .wpcf7 form, .wpcf7-response-output-yes {
+        border: none;
+        float: left;
+        margin: 8vh 0vh 0.5em -1.5em;
+        padding: 0.2em 1em;
+        color: var(--third--color);
+        font-size: 15px;
+        display: none;
+    }
+
+    body:not(.cf7p-message) .wpcf7-not-valid-tip {
+        position: absolute !important;
+        left: 19px !important;
+        top: -13px !important;
+        width: 44px !important;
+        height: 44px !important;
+        padding: 0 !important;
+        background-color: #ed3b2e;
+        text-indent: -9999px !important;
+        padding: 0;
+        border: none !important;
+    }
+
+    .wpcf7-not-valid-tip {
+        color: #dc3232;
+        display: block;
+        margin-top: 2.5vh;
+
+    }
+
+    body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
+        content: '';
+        position: absolute;
+        right: -5px;
+        top: 16px;
+        background-color: #ed3b2e;
+        width: 11px;
+        height: 11px;
+        transform: rotate(45deg);
+    }
+
+    .copy--footer {
+        margin-top: 15vh;
+        padding: 0 7vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .copyright {
+
+        font-size: 13px;
+        color: var(--second-color);
+        font-weight: 400;
+        letter-spacing: 0.5px;
+        text-align: center;
+        margin-bottom: 2vh;
+
+    }
+    .underline {
+        color: var(--first-color);
     }
 
 }

@@ -315,22 +315,14 @@
 
 
     }
-
     .header__text {
-
         font-size: 5.5vw;
         line-height: 4.3vh;
         /*margin-right: -100px;*/
     }
 
     .header__buttonHolder__button {
-        font-size: 1.5vw;
-        color: var(--second-color);
         padding: 10px 17px;
-        border-color: var(--second-color);
-        border-style: solid;
-        border-radius: 25px;
-        border-width: 2px;
     }
 
     .header__buttonHolder {
@@ -338,15 +330,8 @@
     }
 
 
-    .secondpart__image {
-        /*height: 100vh;*/
-        /*width: 100vw;*/
-        height: 100%;
-        width: 100%;
-    }
 
     .secondpart__circledtextHolder {
-        display: flex;
         justify-content: center;
     }
 

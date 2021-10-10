@@ -23,6 +23,10 @@
 }
 ul{
     margin: 0;
+    /*display: none;*/
+}
+.hamburger--links__items{
+    display: none;
 }
 nav{
     display: flex;
@@ -39,7 +43,6 @@ nav img {
     margin-top: 5px;
 }
 
-
 .main--nav , #hamburger--links {
      display: none;
      list-style-type: none;
@@ -53,6 +56,7 @@ nav img {
     font-weight: 520;
     transition: all .1s ease-in;
     justify-self: center;
+    z-index: 3;
 }
 
 .hamburger__menu{
@@ -74,24 +78,15 @@ nav img {
     padding: 10px 10px;
     display: block;
     opacity: 0;
+    /*height: 0;*/
     transition: all .2s ;
     width: 100%;
-    z-index: 3;
+    /*z-index: 3;*/
+    /*position: relative;*/
 }
 #hamburger--links li {
     transition: all 0.2s;
 }
-
-ion-icon {
-    color: red;
-    width: 150px;
-}
-
-
-
-
-
-
 
 .main--nav a:hover , #hamburger--links a:hover{
     /*background-color: gray;*/

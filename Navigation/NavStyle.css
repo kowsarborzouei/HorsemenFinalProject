@@ -55,13 +55,16 @@ nav img {
     justify-self: center;
 }
 
-
-.hamburger--menu span{
+.hamburger__menu{
+    width: 25px;
+    margin-right: 36px;
+}
+.hamburger__menu span{
     display: block;
     width: 20px;
     height: 2px;
     background-color: var(--first-color);
-    margin: 4px 35px ;
+    margin: 4px ;
 }
 
 
@@ -122,7 +125,7 @@ ion-icon {
     nav{
         background-color: transparent;
     }
-    .hamburger--menu{
+    .hamburger__menu{
         display: none;
     }
     .main--nav{

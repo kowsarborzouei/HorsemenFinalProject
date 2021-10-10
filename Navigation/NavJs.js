@@ -4,6 +4,7 @@ let hamburgerClasses = document.getElementsByClassName("hamburger--links__items"
 let hamburger = document.getElementById("hamburger--links");
 let navImg= document.getElementById("nav__img")
 
+//these functions are for changing the appearance of Details Left button
 
 const leftButtonShow =() => {
     leftButton.style.color = "gray";
@@ -11,6 +12,8 @@ const leftButtonShow =() => {
 const leftButtonFade = () => {
     leftButton.style.color="transparent"
 }
+
+//These Functions are for hamburger menu
 
 const closeHamburger = () => {
     hamburger.style.opacity = "0";
@@ -29,6 +32,21 @@ const hamburgerShow =() => {
         closeHamburger()
     }
 }
+//this function is for closing hamburger menu whenever user clicks on page
+
+$( function () {
+    $("html").on("click", function (e) {
+        let $t = $(e.target),
+            $myLinks = $(".hamburger__menu") ;
+        if ($t.is($myLinks)) {
+            hamburgerShow();
+        }else {
+            closeHamburger()
+        }
+    })
+});
+
+//this function is for making Navigation Fixed on top
 
 window.onscroll = function() {headerFixer()};
 let header = document.getElementById("nav");
@@ -46,3 +64,5 @@ function headerFixer() {
         navImg.classList.remove("nav__img--smaller")
     }
 }
+
+

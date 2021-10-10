@@ -1,10 +1,10 @@
-
 :root {
     --Header-content : #e2ae8c;
     --wrapper-background: #fff;
     --images-icons-background: #c9916b;
+    --background-color-icon: rgba(201, 145, 107, 0.7);
+    --third--color: #d6dad8;
 }
-
 .nav--homeLink , .nav--othersLink, .nav--detailsLink{
     color: white;
 }
@@ -12,13 +12,9 @@
     color: var(--first-color);
 }
 
-
 body {
-    /*margin: 0;*/
     font-family: 'Comfortaa', cursive;
-
 }
-
 
 .main-page {
     display: grid;
@@ -65,17 +61,12 @@ body {
                          "square-box   bag";
     row-gap: 2.5vh;
     column-gap: 2.5vh;
-    /*overflow: hidden;*/
-    /*justify-items: stretch;*/
-
 }
 
 .two-card {
     grid-column: two-card;
     position: relative;
-    box-shadow: inset 0 0 0 0 rgba(0, 0, 0, .0);
     overflow: hidden;
-
 }
 
 .lamp {
@@ -89,19 +80,16 @@ body {
     grid-area: square-box;
     position: relative;
     overflow: hidden;
-
 }
 
 .bag {
     grid-area: bag;
     position: relative;
     overflow: hidden;
-
 }
 
 .wrapper_end {
     grid-area: wrapper_end;
-    background-color: #ed3b2e;
 }
 
 .images {
@@ -109,8 +97,6 @@ body {
     height: 100%;
     display: block;
     transition: .25s ease-in-out;
-    backface-visibility: hidden;
-    /*overflow: hidden;*/
 }
 
 
@@ -119,7 +105,6 @@ body {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-
 }
 
 .a_image {
@@ -128,18 +113,7 @@ body {
     display: contents;
 }
 
-.middle__2card__sq {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.middle__lamp__bag {
+.middle{
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -154,7 +128,7 @@ body {
     opacity: 0.3;
 }
 
-.two-card:hover .middle__2card__sq {
+.two-card:hover .middle{
     opacity: 1;
 }
 
@@ -162,7 +136,7 @@ body {
     opacity: 0.3;
 }
 
-.square-box:hover .middle__2card__sq {
+.square-box:hover .middle {
     opacity: 1;
 }
 
@@ -170,7 +144,7 @@ body {
     opacity: 0.3;
 }
 
-.lamp:hover .middle__lamp__bag {
+.lamp:hover .middle{
     opacity: 1;
 }
 
@@ -178,13 +152,12 @@ body {
     opacity: 0.3;
 }
 
-.bag:hover .middle__lamp__bag {
+.bag:hover .middle {
     opacity: 1;
 }
 
 .icon {
-
-    background-color: rgba(201, 145, 107, 0.7);
+    background-color: var(--background-color-icon);
     display: inline-block;
     margin-left: -5px;
     padding: 1rem;
@@ -196,7 +169,6 @@ body {
     color: var(--images-icons-background);
 
 }
-
 
 .two-card img:hover {
     transform: scale(1.2);
@@ -218,14 +190,7 @@ body {
     filter: grayscale(20%);
 }
 
-
-/********************footer*********************/
-
-:root {
-    --first-color: #c9916b;
-    --second-color: #ffffff;
-    --third--color: #d6dad8;
-}
+/*################################################# Footer ####################################################*/
 
 .footer_end {
     width: 100%;
@@ -249,7 +214,6 @@ body {
 
 .input--footer {
     grid-area: input--footer;
-    /*background-color: palevioletred;*/
     padding-right: 0;
     padding-left: 17vw;
     padding-top: 11vh;
@@ -260,7 +224,7 @@ h3 {
     line-height: 47px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: var(--second-color);
+    color: var(--wrapper-background);
 }
 
 .text2_footer {
@@ -268,7 +232,7 @@ h3 {
     line-height: 36px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: var(--second-color);
+    color: var(--wrapper-background);
     text-align: left;
     padding-top: 3vh;
 
@@ -280,18 +244,16 @@ h3 {
     background: transparent;
     font-size: 15px;
     font-family: 'Comfortaa', sans-serif;
-    color: var(--second-color);
-    border-bottom: 1px solid var(--second-color);
+    color: var(--wrapper-background);
+    border-bottom: 1px solid var(--wrapper-background);
     width: 27vw;
     padding-bottom: 0.6rem;
 }
-
 input[type=text]:focus {
     font-size: 15px;
     color: gray;
     width: 25vw;
 }
-
 
 body:not(.cf7p-message) .wpcf7-not-valid-tip {
     position: absolute !important;
@@ -334,11 +296,6 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
     transform: rotate(45deg);
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
-    -webkit-font-smoothing: antialiased;
-}
-
 .wpcf7 form, .wpcf7-response-output-no {
     border: none;
     float: left;
@@ -358,7 +315,6 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
     font-size: 17px;
     display: none;
 }
-
 
 .ajax-loader {
     visibility: hidden;
@@ -391,14 +347,9 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
     animation-iteration-count: infinite;
 }
 
-/**, ::before, ::after {
-    box-sizing: inherit;
-    -webkit-font-smoothing: antialiased;
-}*/
 .ajax-loader {
     visibility: hidden;
 }
-
 
 .input--footer--button {
     width: 7vw;
@@ -408,7 +359,7 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
     box-sizing: border-box;
     background-color: var(--first-color);
     font-size: 17px;
-    color: var(--second-color);
+    color: var(--wrapper-background);
     font-family: 'Comfortaa', sans-serif;
     position: absolute;
     margin: -1vh 1vw;
@@ -423,7 +374,6 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
 
 .image--footer {
     grid-area: image--footer;
-    /*background-color: yellow;*/
 }
 
 .image--footer_position {
@@ -433,27 +383,22 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
 
 .copy--footer {
     grid-area: copy--footer;
-    /* background-color: darksalmon;*/
+    margin-top: 3.5vh;
+    padding: 0 18vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .copyright {
-
     font-size: 17px;
-    color: var(--second-color);
+    color: var(--wrapper-background);
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 
 .copyright:before {
     content: ' \00A9';
-}
-
-.copy--footer {
-    margin-top: 3.5vh;
-    padding: 0 18vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
 g:hover {
@@ -463,28 +408,16 @@ g:hover {
 .icon_footer_svg {
     width: 22px;
     height: 22px;
-
 }
-
-.underline {
-    text-decoration: underline;
-    color: var(--first-color);
-}
+/*############################################## End Of Footer##########################################*/
 
 
-/*********************end footer*******************/
-
-
+/*################################################ Ipad ################################################*/
 @media screen and (max-width: 1239px) {
     .header--content {
-        color: var(--Header-content);
-        text-align: center;
-        margin: 20vh 4vw 0 4vw;
+        margin: 10vh 4vw 0 4vw;
         font-size: 53px /*3.87rem*/;
-        letter-spacing: 0;
         line-height: 61px;
-        font-weight: 700;
-
     }
 
     .main-page {
@@ -549,7 +482,7 @@ g:hover {
         line-height: 40px;
         font-weight: 700;
         letter-spacing: 1px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
     }
 
     .text2_footer {
@@ -557,7 +490,7 @@ g:hover {
         line-height: 31px;
         font-weight: 600;
         letter-spacing: 1px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
         text-align: left;
         padding-top: 3vh;
 
@@ -569,8 +502,8 @@ g:hover {
         background: transparent;
         font-size: 15px;
         font-family: 'Comfortaa', sans-serif;
-        color: var(--second-color);
-        border-bottom: 1px solid var(--second-color);
+        color: var(--wrapper-background);
+        border-bottom: 1px solid var(--wrapper-background);
         width: 25vw;
         padding-bottom: 0.6rem;
     }
@@ -594,7 +527,7 @@ g:hover {
         box-sizing: border-box;
         background-color: var(--first-color);
         font-size: 13px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
         font-family: 'Comfortaa', sans-serif;
         position: absolute;
         margin: 0vh 1vw;
@@ -644,7 +577,7 @@ g:hover {
 
     .copyright {
         font-size: 13px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
         font-weight: 400;
         letter-spacing: 0.5px;
 
@@ -758,7 +691,7 @@ g:hover {
         line-height: 35px;
         font-weight: 700;
         letter-spacing: 1px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
     }
 
     .text2_footer {
@@ -766,7 +699,7 @@ g:hover {
         line-height: 27px;
         font-weight: 600;
         letter-spacing: 1px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
         text-align: left;
         padding-top: 5vh;
 
@@ -778,8 +711,8 @@ g:hover {
         background: transparent;
         font-size: 15px;
         font-family: 'Comfortaa', sans-serif;
-        color: var(--second-color);
-        border-bottom: 1px solid var(--second-color);
+        color: var(--wrapper-background);
+        border-bottom: 1px solid var(--wrapper-background);
         width: 78vw;
         padding-bottom: 0.6rem;
 
@@ -799,7 +732,7 @@ g:hover {
         box-sizing: border-box;
         background-color: var(--first-color);
         font-size: 13px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
         font-family: 'Comfortaa', sans-serif;
         position: absolute;
         margin-top: 8vh;
@@ -898,7 +831,7 @@ g:hover {
     .copyright {
 
         font-size: 13px;
-        color: var(--second-color);
+        color: var(--wrapper-background);
         font-weight: 400;
         letter-spacing: 0.5px;
         text-align: center;

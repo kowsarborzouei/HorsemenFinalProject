@@ -126,11 +126,11 @@ body {
     text-align: center;
 }
 
-.two-card :hover image,.square-box:hover image,.lamp:hover image,.bag:hover image  {
+.two-card :hover image, .square-box:hover image, .lamp:hover image, .bag:hover image {
     opacity: 0.3;
 }
 
-.two-card:hover .middle,.square-box:hover .middle,.lamp:hover .middle,.bag:hover .middle  {
+.two-card:hover .middle, .square-box:hover .middle, .lamp:hover .middle, .bag:hover .middle {
     opacity: 1;
 }
 
@@ -148,10 +148,11 @@ body {
 
 }
 
-.two-card img:hover,.square-box img:hover,.lamp img:hover,.bag img:hover  {
+.two-card img:hover, .square-box img:hover, .lamp img:hover, .bag img:hover {
     transform: scale(1.2);
     filter: grayscale(20%);
 }
+
 /*################################################# Footer ####################################################*/
 
 .footer_end {
@@ -375,9 +376,11 @@ g:hover {
     width: 22px;
     height: 22px;
 }
-.underline{
+
+.underline {
     color: var(--images-icons-background);
 }
+
 /*############################################## End Of Footer##########################################*/
 
 
@@ -475,7 +478,7 @@ g:hover {
     }
 
     body:not(.cf7p-message) .wpcf7-not-valid-tip {
-        top:-15px !important;
+        top: -15px !important;
     }
 
 
@@ -504,6 +507,7 @@ g:hover {
 
 
 }
+
 /*############################################### End Of Media Ipad ##########################################*/
 
 /*############################################## Phone ##################################################*/
@@ -531,6 +535,7 @@ g:hover {
 
 
     }
+
     .image_icon_svg {
         width: 8vw;
         height: 6vh;

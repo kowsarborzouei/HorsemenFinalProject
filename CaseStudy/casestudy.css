@@ -181,7 +181,7 @@ body {
     padding-top: 11vh;
 }
 
-h3 {
+.text1_footer {
     font-size: 35px;
     line-height: 47px;
     font-weight: 700;
@@ -229,6 +229,7 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip {
     text-indent: -9999px !important;
     padding: 0;
     border: none !important;
+    display: none;
 }
 
 .wpcf7-not-valid-tip {

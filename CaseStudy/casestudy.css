@@ -238,14 +238,15 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip {
 }
 
 body:not(.cf7p-message) .wpcf7-not-valid-tip:after {
-    content: ' \2573';
+    content: '\00D7';
     font-family: "mfn-icons";
     position: absolute;
-    left: 12px;
+    left: 14px;
     top: 8px;
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     text-indent: 0;
+    font-weight: bold;
 }
 
 body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
@@ -475,6 +476,11 @@ g:hover {
 
     }
 
+    body:not(.cf7p-message) .wpcf7-not-valid-tip {
+        top:-15px !important;
+    }
+
+
     .wpcf7 form, .wpcf7-response-output-no {
         font-size: 13px;
         font-weight: bold;
@@ -581,7 +587,7 @@ g:hover {
         width: 78vw;
         height: 5vh;
         font-size: 13px;
-        margin-top: 8vh;
+        margin-top: 9vh;
     }
 
     .footer--input--button {

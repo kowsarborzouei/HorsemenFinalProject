@@ -222,7 +222,7 @@ input[type=text]:focus {
 body:not(.cf7p-message) .wpcf7-not-valid-tip {
     position: absolute !important;
     left: -50px !important;
-    top: 0 !important;
+    top: -13px !important;
     width: 44px !important;
     height: 44px !important;
     padding: 0 !important;
@@ -351,7 +351,7 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
 .copy--footer {
     grid-area: copy--footer;
     margin-top: 3.5vh;
-    padding: 0 18vw;
+    padding: 0 16vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -379,8 +379,12 @@ g:hover {
 
 .underline {
     color: var(--images-icons-background);
+    text-decoration: none;
 }
-
+.underline:hover{
+    color: var(--Header-content);
+    text-decoration: underline;
+}
 /*############################################## End Of Footer##########################################*/
 
 

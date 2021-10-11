@@ -67,9 +67,9 @@ body {
     font-weight: 400;
     margin-bottom: 15vh;
 }
-.container{
-    grid-area: container;
-}
+/*.container{*/
+/*    grid-area: container;*/
+/*}*/
 .container__image {
     grid-area: container;
     display: grid;
@@ -126,10 +126,11 @@ h5 {
     margin-top: 30vh;
     margin-bottom: 5vh;
 }
-.image_end{
-    grid-area: image_end;
-}
+/*.image_end{*/
+
+/*}*/
 .image_end--grid{
+    grid-area: image_end;
     display: grid;
     grid-template: 6vh 53vh/33.33vw auto auto;
     grid-template-areas: "text text text"
@@ -475,7 +476,7 @@ g:hover {
 /*######################################### Ipad #############################################*/
 @media screen and (max-width: 1239px){
     .container_main {
-        display: grid;
+        /*display: grid;*/
         grid-template: 100vh 60vh 80vh 50vh 27vh 60vh /100%;
         grid-template-areas: "header"
                              "aside_start"
@@ -485,8 +486,8 @@ g:hover {
                              "footer_end";
     }
     .container__image {
-        grid-area: container;
-        display: grid;
+        /*grid-area: container;*/
+        /*display: grid;*/
         grid-template: 40vh 40vh/50% 50%;
         grid-template-areas: "pic1 pic2"
                              "pic3 pic4";
@@ -517,10 +518,10 @@ g:hover {
         margin-top: -0.5px;
     }
     .image3, .image2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*justify-content: center;*/
+        /*align-items: center;*/
         margin-top: -4vh;
     }
     .h6--part1--aside_end{
@@ -608,7 +609,7 @@ g:hover {
 /*########################################## phone ###############################################*/
 @media screen and (max-width: 768px){
     .container_main {
-        display: grid;
+        /*display: grid;*/
         grid-template: 100vh 60vh 205vh 50vh 165vh 105vh/100% ;
         grid-template-areas: "header"
                              "aside_start"
@@ -638,8 +639,8 @@ g:hover {
     }
 
     .container__image {
-        grid-area: container;
-        display: grid;
+        /*grid-area: container;*/
+        /*display: grid;*/
         grid-template: 35vh 65vh 55vh 35vh/100% ;
         grid-template-areas: "pic1"
                              "pic2"

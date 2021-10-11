@@ -91,12 +91,16 @@
     }
 
     .secondpart__circledtextHolder__image {
-        width: 70%;
+        /*width: 70vw;*/
+        width: 60%;
         margin-top: -20vh;
     }
 
     /*----------------my codes-----------------------*/
-
+    .secondpart{
+        /*display: none !important;*/
+        /*visibility: hidden !important;*/
+    }
     .secondPart-grid{
         display: grid;
         grid-template: 45rem 20rem 30rem 4rem 20rem / 50vw 50vw;
@@ -232,6 +236,10 @@
     .belowSlider__seperator{
         background-color: var(--first-color);
         color: var(--second-color);
+        /*padding-bottom: 2vh;*/
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
         height: 100%;
         text-align: center;
         font-size: 1.2rem;
@@ -243,12 +251,22 @@
     }
 
     .belowSlider__imageHolder{
+        /*!*height: 50rem;*!*/
+        /*!* height: 35rem; *!*/
+        /*width: 50vw;*/
         background: url("images&icons/peopleatTable.jpg");
         background-size: 50vw 40rem , cover;
         background-repeat: no-repeat;
     }
-
+    .belowSlider img {
+        /*!* height: 50vh; *!*/
+        /*width: 100%;*/
+        /*height: 47rem;*/
+    }
     .belowSlider__text{
+        /*height: 40.25rem;*/
+        /* height: 100%; */
+        /*padding: 13vh 8vw 0 8vw;*/
         background-color: var(--background-color);
         background-size: 50vw 47rem;
         color: var(--second-color);

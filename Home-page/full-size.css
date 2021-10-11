@@ -9,11 +9,11 @@
 @media screen and (min-width: 1240px){
 
     body {
-        width: 95vw;
+        width: 99vw;
         height: 100vh;
         margin: auto;
         font-family: 'Comfortaa', cursive;
-
+        overflow-x: hidden;
         /*line-height: 3vh;*/
     }
 
@@ -22,7 +22,7 @@
     }
 
     .header {
-        width: 90vw;
+        width: 94vw;
         /*height: 45vh;*/
         height: 100vh;
         display: flex;
@@ -111,7 +111,7 @@
     }
     .secondPart-grid{
         display: grid;
-        grid-template: 65rem 30rem 40rem 7rem 50vh / 47.5vw 47.5vw;
+        grid-template: 65rem 30rem 40rem 7rem 50vh / 49.5vw 49.5vw;
         grid-template-areas: "walls about-us"
                              "what-can blank"
                              "icons icons"

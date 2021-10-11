@@ -216,7 +216,7 @@ body {
 input[type=text]:focus {
     font-size: 15px;
     color: gray;
-    width: 25vw;
+    width: 27vw;
 }
 
 body:not(.cf7p-message) .wpcf7-not-valid-tip {

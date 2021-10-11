@@ -280,42 +280,42 @@ body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
     display: none;
 }
 
-.ajax-loader {
-    visibility: hidden;
-    display: inline-block;
-    background-color: #23282d;
-    opacity: 0.75;
-    width: 24px;
-    height: 24px;
-    border: none;
-    border-radius: 100%;
-    padding: 0;
-    margin: 0 24px;
-    position: relative;
-}
+/*.ajax-loader {*/
+/*    visibility: hidden;*/
+/*    display: inline-block;*/
+/*    background-color: #23282d;*/
+/*    opacity: 0.75;*/
+/*    width: 24px;*/
+/*    height: 24px;*/
+/*    border: none;*/
+/*    border-radius: 100%;*/
+/*    padding: 0;*/
+/*    margin: 0 24px;*/
+/*    position: relative;*/
+/*}*/
 
-.ajax-loader:before {
-    content: '';
-    position: absolute;
-    background-color: #fbfbfc;
-    top: 2vh;
-    left: 4px;
-    width: 20px;
-    height: 20px;
-    border: none;
-    border-radius: 100%;
-    transform-origin: 8px 8px;
-    animation-name: spin;
-    animation-duration: 1000ms;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
+/*.ajax-loader:before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    background-color: #fbfbfc;*/
+/*    top: 2vh;*/
+/*    left: 4px;*/
+/*    width: 20px;*/
+/*    height: 20px;*/
+/*    border: none;*/
+/*    border-radius: 100%;*/
+/*    transform-origin: 8px 8px;*/
+/*    animation-name: spin;*/
+/*    animation-duration: 1000ms;*/
+/*    animation-timing-function: linear;*/
+/*    animation-iteration-count: infinite;*/
+/*}*/
 
-.ajax-loader {
-    visibility: hidden;
-}
+/*.ajax-loader {*/
+/*    visibility: hidden;*/
+/*}*/
 
-.input--footer--button {
+.footer--button {
     width: 7vw;
     height: 5vh;
     border: 0;
@@ -450,7 +450,7 @@ g:hover {
         padding-left: 8vw;
     }
 
-    .input--footer--button {
+    .footer--button {
         width: 10vw;
         height: 3vh;
         font-size: 13px;
@@ -532,7 +532,7 @@ g:hover {
         height: 6vh;
     }
 
-    /*################################## Ipad Footer ####################################*/
+    /*################################## Phone Footer ####################################*/
     .main-page {
         display: grid;
         grid-template: 80vh 8vh 196vh 8vh 105vh/ 100%;
@@ -577,7 +577,7 @@ g:hover {
         width: 78vw;
     }
 
-    .input--footer--button {
+    .footer--button {
         width: 78vw;
         height: 5vh;
         font-size: 13px;
@@ -602,8 +602,6 @@ g:hover {
 
     .input--footer {
         grid-area: input--footer;
-        /*background-color: palevioletred;*/
-        padding-right: 0;
         padding-left: 12vw;
         padding-top: 11vh;
     }
@@ -611,58 +609,21 @@ g:hover {
     .icon_footer_svg {
         width: 17px;
         height: 17px;
-
     }
 
     .wpcf7 form, .wpcf7-response-output-no {
-        border: none;
-        float: left;
         margin: 8vh 0vh 0.5em -1.5em;
-        padding: 0.2em 1em;
-        color: var(--third--color);
         font-size: 15px;
-
     }
 
     .wpcf7 form, .wpcf7-response-output-yes {
-        border: none;
-        float: left;
         margin: 8vh 0vh 0.5em -1.5em;
-        padding: 0.2em 1em;
-        color: var(--third--color);
         font-size: 15px;
-        display: none;
     }
 
     body:not(.cf7p-message) .wpcf7-not-valid-tip {
-        position: absolute !important;
         left: 19px !important;
         top: -13px !important;
-        width: 44px !important;
-        height: 44px !important;
-        padding: 0 !important;
-        background-color: #ed3b2e;
-        text-indent: -9999px !important;
-        padding: 0;
-        border: none !important;
-    }
-
-    .wpcf7-not-valid-tip {
-        color: #dc3232;
-        display: block;
-        margin-top: 2.5vh;
-
-    }
-
-    body:not(.cf7p-message) .wpcf7-not-valid-tip:before {
-        content: '';
-        position: absolute;
-        right: -5px;
-        top: 16px;
-        background-color: #ed3b2e;
-        width: 11px;
-        height: 11px;
-        transform: rotate(45deg);
     }
 
     .copy--footer {
@@ -675,15 +636,10 @@ g:hover {
     }
 
     .copyright {
-
         font-size: 13px;
-        color: var(--wrapper-background);
-        font-weight: 400;
-        letter-spacing: 0.5px;
         text-align: center;
         margin-bottom: 2vh;
 
     }
-
 }
 

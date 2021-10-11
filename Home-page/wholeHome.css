@@ -1,0 +1,563 @@
+:root {
+    --first-color: #c9916b;
+    --second-color:#ffffff;
+    --third--color:#d6dad8;
+    --background-color:#2d453b;
+}
+@media screen and (min-width: 1240px){
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: auto;
+        font-family: 'Comfortaa', cursive;
+
+        /*line-height: 3vh;*/
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    .header {
+        width: 100vw;
+        /*height: 45vh;*/
+        height: 70vh;
+        display: flex;
+        flex-direction: row;
+        background-image: url(images&icons/backgroundshape.png), url(images&icons/background.png);
+        background-position: top;
+        background-size: 35vw 60vh, cover;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 5vw;
+
+    }
+
+    .header__imageholder {
+        display: flex;
+        width: 45vw;
+        /*height: 45vh;*/
+        height: 70vh;
+        justify-content: right;
+        align-self: end;
+        margin-left: -20vw;
+        overflow: hidden;
+    }
+
+    .header__imageholder__image {
+        width: 85%;
+        margin-right: 5vw;
+        margin-top: 0;
+    }
+
+    .header__text {
+        align-self: center;
+        color: var(--first-color);
+        font-size: 5vw;
+        font-weight: bolder;
+        width: 60vw;
+        line-height: 9vh;
+        padding-left: 5vw;
+        /*margin-right: -100px;*/
+    }
+
+    .header__buttonHolder__button {
+        font-size: 1.5vw;
+        color: var(--second-color);
+        padding: 13px 20px;
+        border-color: var(--second-color);
+        border-style: solid;
+        border-radius: 25px;
+        border-width: 2px;
+    }
+
+    .header__buttonHolder {
+        margin-top: 5vh;
+    }
+
+
+    .secondpart__image {
+        /*height: 100vh;*/
+        /*width: 100vw;*/
+        height: 100%;
+        width: 100%;
+    }
+
+    .secondpart__circledtextHolder {
+        display: flex;
+        justify-content: end;
+    }
+
+    .secondpart__circledtextHolder__image {
+        width: 70%;
+        margin-top: -20vh;
+    }
+
+    /*----------------my codes-----------------------*/
+
+    .secondPart-grid{
+        display: grid;
+        grid-template: 45rem 20rem 30rem 4rem 20rem / 50vw 50vw;
+        grid-template-areas: "walls about-us"
+                             "what-can blank"
+                             "icons icons"
+                             "caseStudy-bar caseStudy-bar"
+                             "slider slider";
+        overflow: hidden;
+    }
+
+    .walls{
+        grid-area: walls;
+    }
+
+    .about-us{
+        grid-area: about-us;
+        padding: 5vh 8vw;
+        background-color: #faf8f7;
+    }
+
+    .what-can{
+        grid-area: what-can;
+        margin-top: 5vh;
+        margin-left: 7vw;
+        font-size: 1rem;
+    }
+
+    .icons{
+        grid-area: icons;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 7vw;
+    }
+
+    .caseStudy-bar{
+        grid-area: caseStudy-bar;
+        background-color: #faf8f7;
+        /*height: 7vh;*/
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-weight: lighter;
+    }
+
+    .slider{
+        grid-area: slider;
+        background-color: dodgerblue;
+    }
+
+    /*----------------my codes-----------------------*/
+
+    .secondpart--margin {
+        margin: 5vh 8vw;
+    }
+
+    .secondpart__title {
+        margin-top: 70px;
+        font-size: 1rem;
+        color: gray;
+        font-weight: lighter;
+    }
+
+
+    .secondpart__text {
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        font-weight: bold;
+    }
+
+    .secondpart__button {
+        font-size: 1rem;
+        color: var(--second-color);
+        padding: 1.2vh 3vw;
+        border-radius: 44vw;
+        font-weight: bold;
+        background-color: var(--first-color);
+    }
+
+    .learnMore-button{
+        margin-top: 5vh;
+    }
+
+    .secondpart__4Image {
+        margin-top: 0;
+    }
+
+    .secondpart__4Image img{
+        width: 13vw;
+    }
+
+    .secondpart__4Image div {
+        margin-top: 4vh;
+        font-size: 3vw;
+    }
+
+    .secondpart__4Image p {
+        color: var(--first-color);
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .secondpart__4Image span {
+        display: inline-block;
+        margin-top: 1vh;
+        font-size: 1.5rem;
+        line-height: 3.5vh;
+        font-weight: bold;
+    }
+
+    /*my codes---------------------------------------*/
+    .belowSlider-grid{
+        display: grid;
+        grid-template: 4rem 40rem / 50vw 50vw;
+        grid-template-areas: "seeMore-bar seeMore-bar"
+                             "people-img below-text";
+        overflow: hidden;
+    }
+
+    .seeMore-bar{
+        grid-area: seeMore-bar;
+    }
+    .people-img{
+        grid-area: people-img;
+    }
+    .below-text{
+        grid-area: below-text;
+    }
+    /*my codes---------------------------------------*/
+
+    .belowSlider__seperator{
+        background-color: var(--first-color);
+        color: var(--second-color);
+        height: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+
+    .belowSlider__seperator span{
+        padding-bottom: 1vh;
+    }
+
+    .belowSlider__imageHolder{
+        background: url("images&icons/peopleatTable.jpg");
+        background-size: 50vw 40rem , cover;
+        background-repeat: no-repeat;
+    }
+
+    .belowSlider__text{
+        background-color: var(--background-color);
+        background-size: 50vw 47rem;
+        color: var(--second-color);
+        font-size: 2.5vw;
+        line-height: 7.5vh;
+        font-weight: bold;
+
+    }
+    .belowSlider p {
+        font-weight: normal;
+        font-size: 2vw;
+
+    }
+
+    .belowSlider-textContainer{
+        margin: 10vh 1vw;
+    }
+
+}
+
+/*//////////////////////////// This is the ipad part //////////////*/
+
+
+:root {
+    --first-color: #c9916b;
+    --second-color:#ffffff;
+    --third--color:#d6dad8;
+    --background-color:#2d453b;
+}
+@media screen and (min-width: 768px){
+
+
+
+    .header {
+        height: 60vh;
+        background-size: 35vw 35vh, cover;
+    }
+
+    .header__imageholder {
+        width: 65vw;
+        height: 60vh;
+    }
+
+    .header__imageholder__image {
+        width: 100%;
+
+
+    }
+    .header__text {
+        font-size: 5.5vw;
+        line-height: 4.3vh;
+        /*margin-right: -100px;*/
+    }
+
+    .header__buttonHolder__button {
+        padding: 10px 17px;
+    }
+
+    .header__buttonHolder {
+        margin-top: 2.7vh;
+    }
+
+    .secondpart__circledtextHolder {
+        justify-content: center;
+    }
+
+    .secondpart__circledtextHolder__image {
+        width: 100%;
+    }
+
+    /*----------------my codes-----------------------*/
+
+    .icons{
+        justify-content: space-between;
+    }
+
+    .caseStudy-bar{
+        font-size: 2vw;
+    }
+
+    /*----------------my codes-----------------------*/
+
+
+    .secondpart__text {
+        font-size: 18px;
+        line-height: 3vh;
+        font-weight: bolder;
+    }
+
+
+
+    .secondpart__button {
+        padding: 1.7vw 3vh;
+    }
+
+
+    .secondpart__4Image img{
+        width: 18vw;
+    }
+
+
+
+
+    .secondpart__4Image span {
+        font-size: 3vw;
+    }
+
+    /*my codes---------------------------------------*/
+    .belowSlider-grid{
+        display: grid;
+        grid-template: 4rem 40rem / 50vw 50vw;
+        grid-template-areas: "seeMore-bar seeMore-bar"
+                             "people-img below-text";
+    }
+
+
+
+
+    /*my codes---------------------------------------*/
+
+    .belowSlider__seperator{
+        font-size: 2vw;
+        vertical-align: middle;
+    }
+
+    .belowSlider__seperator span{
+        display: inline-block;
+        padding-top: 2vh;
+    }
+
+
+
+    .belowSlider__text{
+        font-size: 3vw;
+        line-height: 4vh;
+    }
+
+
+    .belowSlider-textContainer{
+        padding: 15vh 7vw;
+        line-height: 6vh;
+    }
+
+
+}
+
+/*This is the mobile part*/
+
+
+
+:root {
+    --first-color: #c9916b;
+    --second-color:#ffffff;
+    --third--color:#d6dad8;
+    --background-color:#2d453b;
+}
+@media screen and (max-width: 768px) {
+    body {
+        height: 200vh;
+        line-height: 3vh;
+    }
+
+
+
+    .header {
+        width: 95vw;
+        height: 45vh;
+        background-size: 30vw 30vh, cover;
+    }
+
+    .header__imageholder {
+        width: 65vw;
+        height: 50vh;
+    }
+
+    .header__imageholder__image {
+        width: 100%;
+        margin-right: -11vw;
+        margin-top: 12vh;
+    }
+
+    .header__text {
+        font-size: 5.5vw;
+    }
+
+    .header__buttonHolder__button {
+        font-size: 1.8vw;
+        padding: 7px 15px;
+    }
+
+    .header__buttonHolder {
+        margin-top: 2.7vh;
+    }
+
+    /*my edit--------------------------------*/
+    .secondPart-grid {
+        display: grid;
+        grid-template: 40rem 40rem 20rem 75rem 3rem 15rem / 100vw;
+        grid-template-areas: "walls "
+                         "about-us"
+                         "what-can"
+                         "icons"
+                         "caseStudy-bar"
+                         "slider";
+    }
+
+
+
+    .what-can {
+        grid-area: what-can;
+        padding: 10vh 7vw;
+
+    }
+
+    .icons {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .caseStudy-bar {
+        font-size: 3vw;
+    }
+
+
+
+    /*my edit-----------------------------------*/
+    .secondpart__image {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .secondpart__circledtextHolder {
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .secondpart__circledtextHolder__image {
+        width: 70vw;
+    }
+
+
+    .secondpart__text {
+        font-size: 3.5vw;
+        font-weight: 700;
+    }
+
+    .secondpart__title {
+        margin-top: 30px;
+        font-size: 3.5vw;
+    }
+
+    .secondpart__button {
+        font-size: 3.5vw;
+        padding: 3.5vw 5.5vh;
+    }
+
+
+    .secondpart__4Image img {
+        width: 45vw;
+    }
+
+    .secondpart__4Image div {
+        margin-bottom: 4vh;
+    }
+
+
+    /*my codes---------------------------------------*/
+    .belowSlider-grid{
+        display: grid;
+        grid-template: 3rem 40rem 20rem / 100vw;
+        grid-template-areas: "seeMore-bar"
+                             "people-img"
+                             "below-text";
+    }
+
+    .people-img{
+        background: url("images&icons/peopleatTable.jpg");
+        background-size: 100vw 40rem;
+    }
+
+    /*my codes---------------------------------------*/
+
+    .belowSlider__seperator {
+        height: 7vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3vw;
+    }
+
+    .belowSlider__imageHolder {
+        height: 95vh;
+    }
+
+    .belowSlider img {
+        height: 95vh;
+        width: 100vw;
+    }
+
+    .belowSlider__text {
+        padding: 5vh 8vw;
+        height: 35vh;
+        font-size: 5vw;
+        line-height: 5vh;
+    }
+
+    .belowSlider p {
+        font-size: 4vw;
+    }
+}
+

@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+    z-index: 10;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color:#262D29; /* Fallback color */
+    background-color: rgba(38, 45, 41, 0.7); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+
+}
+
+/* Modal Content */
+.modal-content {
+    /*position: fixed;*/
+    /*bottom: 0;*/
+    width: 100vw;
+    height: 50vh;
+    position:fixed;
+    top: 10%;
+    left: 25%;
+    background-color: transparent;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+
+}
+
+.modal-image {
+    width: 50%;
+    height: 50%;
+
+}
+
+/* The Close Button */
+.close_2card,.close_bag,.close_lamp,.close_squareBox{
+    position: absolute;
+    top: -4vh;
+    left: 49%;
+    color: #CFD8DC;
+    float: right;
+    font-size: 25px;
+    z-index: 5;
+}
+
+
+.close_2card,.close_bag,.close_lamp,.close_squareBox:hover,
+.close_2card,.close_bag,.close_lamp,.close_squareBox:focus {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+Add Animation
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
